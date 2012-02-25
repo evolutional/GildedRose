@@ -62,8 +62,11 @@
       A Kata to practice your refactoring.
     </div>
 
-    
-      <p>This is a simple example of some indebted code. It is only about 30 lines long, yet it feels like nasty legacy. It gets to several of the core anti-patterns that cause debt in real systems:</p>
+<p>In this kata, you will add one new piece of functionality to an existing indebted code base. The problem description is available in the comment block at the top of the main class file. I will also repeat it below.</p>
+
+<p>The intention is to get your feet wet with refactoring indebted code. Additionally, see if you can identify what makes this code hard to work with, both in particular example and in terms of the anti-patterns present within it.</p>
+
+<p>This is a simple example of some indebted code. It is only about 30 lines long, yet it feels like nasty legacy. It gets to several of the core anti-patterns that cause debt in real systems:</p>
 
 <dl>
 <dt>Primitive Obsession</dt>
@@ -82,6 +85,18 @@
 <dt>It works</dt>
 <dd>You are being asked to add a new feature. However, before you start, the code is a bug-free, correct implementation of all previously existing features.</dd>
 </dl>
+
+<h2>Problem Statement</h2>
+
+<p>There is an existing inventoy processing function, named <code>UpdateQuality()</code>. It does nearly everything that we need. We are running an inn, and this function updates the quality level and sell by date for all the items in our inventory.</p>
+
+<p>Different items have different business rules. The current code handles the business rules correctly for all items. These business rules can be found in comments in the code.</p>
+
+<p>We need to add a new type of item. Again, details for the new rule are in comments in the code.</p>
+
+<p>The project is already late, so "just make the minimal changes to fix the bug." Of course, you should also leave th code better than it was before you started. This is, after all, the most important code "asset" that this company owns.</p>
+
+<p>Finally, there are some office politics going on. There is a set of code that you can't change (to see why, read the code comments). If you change even a single character of the file HereBeDragons.cs, then you will be fired.</p>
 
       <h2>License</h2>
       <p>MIT</p>
