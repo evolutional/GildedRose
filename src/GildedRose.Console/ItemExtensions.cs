@@ -1,3 +1,5 @@
+using System;
+
 namespace GildedRose.Console
 {
 	internal static class ItemExtensions
@@ -15,20 +17,14 @@ namespace GildedRose.Console
 		private static int ComputeNewQualityDecrement(int initialQuality)
 		{
 			int quality = initialQuality + -1;
-			if(quality < 0)
-			{
-				quality = 0;
-			}
+			quality = Math.Max(0, quality);
 			return quality;
 		}
 
 		private static int ComputeNewQualityIncrement(int initialQuality)
 		{
 			int newQuality = initialQuality + 1;
-			if(initialQuality > 50)
-			{
-				newQuality = 50;
-			}
+			newQuality = Math.Min(50, newQuality);
 			return newQuality;
 		}
 
