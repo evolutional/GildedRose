@@ -54,7 +54,23 @@ namespace GildedRose.Console
 
 		public static void UpdateQuality(Item item)
 		{
-			if(item.IsCheese() || item.IsTickets())
+			if(item.IsCheese())
+			{
+				item.IncrementQuality();
+				if(item.IsTickets())
+				{
+					if(item.SellIn < 11)
+					{
+						item.IncrementQuality();
+					}
+
+					if(item.SellIn < 6)
+					{
+						item.IncrementQuality();
+					}
+				}
+			}
+			else if(item.IsTickets())
 			{
 				item.IncrementQuality();
 				if(item.IsTickets())
