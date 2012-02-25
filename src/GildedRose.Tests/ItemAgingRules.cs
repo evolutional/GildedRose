@@ -4,6 +4,8 @@ using System.Text;
 using ApprovalTests;
 using ApprovalTests.Reporters;
 using NUnit.Framework;
+using GildedRose.Console;
+using FluentAssertions;
 
 namespace GildedRose.Tests
 {
@@ -22,6 +24,22 @@ namespace GildedRose.Tests
 			}
 			trace.AppendLine(DisplayInventory(testSubject.InventoryTestAccess));
 			Approvals.Verify(trace.ToString());
+		}
+
+		[Test]
+		public void ItemQualityShouldAlwaysRemainWithinAllowedMax()
+		{
+			var testSubject = new Console.GildedRose.Item {Quality = 3};
+			testSubject.IncrementQuality(90);
+			testSubject.Quality.Should().Be(50);
+		}
+
+		[Test]
+		public void ItemQualityShouldAlwaysRemainWithinAllowedMin()
+		{
+			var testSubject = new Console.GildedRose.Item {Quality = 3};
+			testSubject.DecrementQuality(-90);
+			testSubject.Quality.Should().Be(0);
 		}
 
 		private string DisplayInventory(IEnumerable<Console.GildedRose.Item> inventory)

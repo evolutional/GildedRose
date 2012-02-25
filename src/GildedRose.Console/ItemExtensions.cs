@@ -2,18 +2,18 @@ using System;
 
 namespace GildedRose.Console
 {
-	internal static class ItemExtensions
+	public static class ItemExtensions
 	{
-		public static void DecrementQuality(this GildedRose.Item item)
+		public static void DecrementQuality(this GildedRose.Item item, int amount)
 		{
 			if (IsLegendary(item)) return;
-			item.Quality = ComputeNewQuality(item.Quality, -1);
+			item.Quality = ComputeNewQuality(item.Quality, amount);
 		}
 
-		public static void IncrementQuality(this GildedRose.Item item)
+		public static void IncrementQuality(this GildedRose.Item item, int amount)
 		{
 			if (IsLegendary(item)) return;
-			item.Quality = ComputeNewQuality(item.Quality, 1);
+			item.Quality = ComputeNewQuality(item.Quality, amount);
 		}
 
 		public static void SetQualityToZero(this GildedRose.Item item)
