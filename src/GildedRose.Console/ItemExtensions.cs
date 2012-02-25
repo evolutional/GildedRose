@@ -4,15 +4,22 @@ namespace GildedRose.Console
 	{
 		public static void DecrementQuality(this GildedRose.Item item)
 		{
-			if(item.Quality > 0)
-			{
-				item.Quality = item.Quality + -1;
-			}
+			item.Quality = ComputeNewQualityDecrement(item);
 		}
 
 		public static void IncrementQuality(this GildedRose.Item item)
 		{
 			item.Quality = ComputeNewQualityIncrement(item);
+		}
+
+		private static int ComputeNewQualityDecrement(GildedRose.Item item)
+		{
+			int quality = item.Quality;
+			if(item.Quality > 0)
+			{
+				quality = item.Quality + -1;
+			}
+			return quality;
 		}
 
 		private static int ComputeNewQualityIncrement(GildedRose.Item item)
