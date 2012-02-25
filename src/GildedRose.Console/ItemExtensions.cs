@@ -16,8 +16,8 @@ namespace GildedRose.Console
 			if(item.Quality < 50)
 			{
 				newQuality = item.Quality + 1;
-				item.Quality = newQuality;
 			}
+			item.Quality = newQuality;
 		}
 
 		public static bool IsLegendary(this GildedRose.Item item)
