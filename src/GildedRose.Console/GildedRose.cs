@@ -66,18 +66,17 @@ namespace GildedRose.Console
 				if(item.Quality < 50)
 				{
 					item.Quality = item.Quality + 1;
-
-					if(item.IsTickets())
+				}
+				if(item.IsTickets())
+				{
+					if(item.SellIn < 11)
 					{
-						if(item.SellIn < 11)
-						{
-							item.IncrementQuality();
-						}
+						item.IncrementQuality();
+					}
 
-						if(item.SellIn < 6)
-						{
-							item.IncrementQuality();
-						}
+					if(item.SellIn < 6)
+					{
+						item.IncrementQuality();
 					}
 				}
 			}
@@ -93,7 +92,7 @@ namespace GildedRose.Console
 				{
 					if(!item.IsTickets())
 					{
-						if (!item.IsLegendary())
+						if(!item.IsLegendary())
 						{
 							item.DecrementQuality();
 						}
