@@ -60,29 +60,45 @@ namespace GildedRose.Console
 
 		private static void UpdateQuality(Item item)
 		{
-			if(item.IsCheese())
-			{
-				item.AdjustQuality(1);
-			}
-			else if(item.IsTickets())
-			{
-				var adjustment = item.SellIn < 5 ? 3 : (item.SellIn < 10 ? 2 : 1);
-				item.AdjustQuality(adjustment);
-			}
-			else
-			{
-				item.AdjustQuality(-1);
-			}
-
 			if(item.IsExpired())
 			{
-				if(item.IsCheese())
+				if (item.IsCheese())
+				{
+					item.AdjustQuality(1);
+				}
+				else if (item.IsTickets())
+				{
+					var adjustment = item.SellIn < 5 ? 3 : (item.SellIn < 10 ? 2 : 1);
+					item.AdjustQuality(adjustment);
+				}
+				else
+				{
+					item.AdjustQuality(-1);
+				}
+
+				if (item.IsCheese())
 				{
 					item.AdjustQuality(1);
 				}
 				else if(item.IsTickets())
 				{
 					item.SetQualityToZero();
+				}
+				else
+				{
+					item.AdjustQuality(-1);
+				}
+			}
+			else
+			{
+				if (item.IsCheese())
+				{
+					item.AdjustQuality(1);
+				}
+				else if (item.IsTickets())
+				{
+					var adjustment = item.SellIn < 5 ? 3 : (item.SellIn < 10 ? 2 : 1);
+					item.AdjustQuality(adjustment);
 				}
 				else
 				{
