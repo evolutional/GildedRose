@@ -4,32 +4,30 @@ namespace GildedRose.Console
 	{
 		public static void DecrementQuality(this GildedRose.Item item)
 		{
-			item.Quality = ComputeNewQualityDecrement(item);
+			item.Quality = ComputeNewQualityDecrement(item.Quality);
 		}
 
 		public static void IncrementQuality(this GildedRose.Item item)
 		{
-			item.Quality = ComputeNewQualityIncrement(item);
+			item.Quality = ComputeNewQualityIncrement(item.Quality);
 		}
 
-		private static int ComputeNewQualityDecrement(GildedRose.Item item)
+		private static int ComputeNewQualityDecrement(int initialQuality)
 		{
-			int quality = item.Quality;
-			if(item.Quality > 0)
+			if(initialQuality > 0)
 			{
-				quality = item.Quality + -1;
+				return initialQuality + -1;
 			}
-			return quality;
+			return initialQuality;
 		}
 
-		private static int ComputeNewQualityIncrement(GildedRose.Item item)
+		private static int ComputeNewQualityIncrement(int initialQuality)
 		{
-			int newQuality = item.Quality;
-			if(item.Quality < 50)
+			if(initialQuality < 50)
 			{
-				newQuality = item.Quality + 1;
+				return initialQuality + 1;
 			}
-			return newQuality;
+			return initialQuality;
 		}
 
 		public static bool IsLegendary(this GildedRose.Item item)
