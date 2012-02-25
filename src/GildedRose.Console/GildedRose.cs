@@ -98,7 +98,7 @@ namespace GildedRose.Console
 
 			if(item.SellIn < 0)
 			{
-				if(item.Name != "Aged Brie")
+				if(!IsCheese(item))
 				{
 					if(item.Name != "Backstage passes to a TAFKAL80ETC concert")
 					{
