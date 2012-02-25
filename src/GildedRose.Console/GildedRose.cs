@@ -48,11 +48,11 @@ namespace GildedRose.Console
 		{
 			for(int i = 0; i < _innventory.Count; i++)
 			{
-				UpdateQuality(i, _innventory[i]);
+				UpdateQuality(_innventory[i]);
 			}
 		}
 
-		public void UpdateQuality(int i, Item item)
+		private static void UpdateQuality(Item item)
 		{
 			if(item.Name != "Aged Brie" && item.Name != "Backstage passes to a TAFKAL80ETC concert")
 			{
