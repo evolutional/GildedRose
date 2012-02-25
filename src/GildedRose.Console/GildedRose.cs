@@ -74,24 +74,18 @@ namespace GildedRose.Console
 					{
 						if(item.SellIn < 11)
 						{
-							if(item.Quality < 50)
-							{
-								item.Quality = item.Quality + 1;
-							}
+							IncrementQuality(item);
 						}
 
 						if(item.SellIn < 6)
 						{
-							if(item.Quality < 50)
-							{
-								item.Quality = item.Quality + 1;
-							}
+							IncrementQuality(item);
 						}
 					}
 				}
 			}
 
-			if(item.Name != "Sulfuras, Hand of Ragnaros")
+			if(!IsLegendary(item))
 			{
 				item.SellIn = item.SellIn - 1;
 			}
@@ -100,11 +94,11 @@ namespace GildedRose.Console
 			{
 				if(!IsCheese(item))
 				{
-					if(item.Name != "Backstage passes to a TAFKAL80ETC concert")
+					if(!IsTickets(item))
 					{
 						if(item.Quality > 0)
 						{
-							if(item.Name != "Sulfuras, Hand of Ragnaros")
+							if(!IsLegendary(item))
 							{
 								item.Quality = item.Quality - 1;
 							}
@@ -117,11 +111,16 @@ namespace GildedRose.Console
 				}
 				else
 				{
-					if(item.Quality < 50)
-					{
-						item.Quality = item.Quality + 1;
-					}
+					IncrementQuality(item);
 				}
+			}
+		}
+
+		private static void IncrementQuality(Item item)
+		{
+			if(item.Quality < 50)
+			{
+				item.Quality = item.Quality + 1;
 			}
 		}
 
