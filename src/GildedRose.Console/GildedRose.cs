@@ -42,15 +42,6 @@ namespace GildedRose.Console
 {
 	public partial class GildedRose
 	{
-		private static void Main(string[] args)
-		{
-			System.Console.WriteLine("OMGHAI!");
-
-			var app = new GildedRose();
-			app.UpdateQuality();
-			System.Console.ReadKey();
-		}
-
 		public void UpdateQuality()
 		{
 			for(int i = 0; i < _innventory.Count; i++)
