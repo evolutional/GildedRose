@@ -12,9 +12,11 @@ namespace GildedRose.Console
 
 		public static void IncrementQuality(this GildedRose.Item item)
 		{
+			int newQuality = item.Quality;
 			if(item.Quality < 50)
 			{
-				item.Quality = item.Quality + 1;
+				newQuality = item.Quality + 1;
+				item.Quality = newQuality;
 			}
 		}
 
