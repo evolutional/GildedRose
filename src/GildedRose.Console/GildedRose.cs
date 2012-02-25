@@ -72,7 +72,7 @@ namespace GildedRose.Console
 					item.IncrementQuality();
 				}
 			}
-			else if(!item.IsLegendary())
+			else
 			{
 				item.DecrementQuality();
 			}
@@ -92,7 +92,7 @@ namespace GildedRose.Console
 				{
 					item.SetQualityToZero();
 				}
-				else if(!item.IsLegendary())
+				else
 				{
 					item.DecrementQuality();
 				}
