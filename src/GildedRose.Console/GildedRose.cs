@@ -54,11 +54,11 @@ namespace GildedRose.Console
 
 		public static void UpdateQuality(Item item)
 		{
-			if(!IsCheese(item) && !IsTickets(item))
+			if(!ItemExtensions.IsCheese(item) && !ItemExtensions.IsTickets(item))
 			{
-				if(!IsLegendary(item))
+				if(!ItemExtensions.IsLegendary(item))
 				{
-					DecrementQuality(item);
+					ItemExtensions.DecrementQuality(item);
 				}
 			}
 			else
@@ -67,35 +67,35 @@ namespace GildedRose.Console
 				{
 					item.Quality = item.Quality + 1;
 
-					if(IsTickets(item))
+					if(ItemExtensions.IsTickets(item))
 					{
 						if(item.SellIn < 11)
 						{
-							IncrementQuality(item);
+							ItemExtensions.IncrementQuality(item);
 						}
 
 						if(item.SellIn < 6)
 						{
-							IncrementQuality(item);
+							ItemExtensions.IncrementQuality(item);
 						}
 					}
 				}
 			}
 
-			if(!IsLegendary(item))
+			if(!ItemExtensions.IsLegendary(item))
 			{
 				item.SellIn = item.SellIn - 1;
 			}
 
 			if(item.SellIn < 0)
 			{
-				if(!IsCheese(item))
+				if(!ItemExtensions.IsCheese(item))
 				{
-					if(!IsTickets(item))
+					if(!ItemExtensions.IsTickets(item))
 					{
-						if (!IsLegendary(item))
+						if (!ItemExtensions.IsLegendary(item))
 						{
-							DecrementQuality(item);
+							ItemExtensions.DecrementQuality(item);
 						}
 					}
 					else
@@ -105,40 +105,9 @@ namespace GildedRose.Console
 				}
 				else
 				{
-					IncrementQuality(item);
+					ItemExtensions.IncrementQuality(item);
 				}
 			}
-		}
-
-		private static void DecrementQuality(Item item)
-		{
-			if(item.Quality > 0)
-			{
-				item.Quality = item.Quality - 1;
-			}
-		}
-
-		private static void IncrementQuality(Item item)
-		{
-			if(item.Quality < 50)
-			{
-				item.Quality = item.Quality + 1;
-			}
-		}
-
-		private static bool IsLegendary(Item item)
-		{
-			return item.Name == "Sulfuras, Hand of Ragnaros";
-		}
-
-		private static bool IsTickets(Item item)
-		{
-			return item.Name == "Backstage passes to a TAFKAL80ETC concert";
-		}
-
-		private static bool IsCheese(Item item)
-		{
-			return item.Name == "Aged Brie";
 		}
 
 		public IEnumerable<Item> InventoryTestAccess { get { return _innventory; } }
