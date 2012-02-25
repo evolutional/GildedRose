@@ -48,78 +48,78 @@ namespace GildedRose.Console
 		{
 			for(int i = 0; i < _innventory.Count; i++)
 			{
-				UpdateQuality(i);
+				UpdateQuality(i, _innventory[i]);
 			}
 		}
 
-		public void UpdateQuality(int i)
+		public void UpdateQuality(int i, Item item)
 		{
-			if(_innventory[i].Name != "Aged Brie" && _innventory[i].Name != "Backstage passes to a TAFKAL80ETC concert")
+			if(item.Name != "Aged Brie" && item.Name != "Backstage passes to a TAFKAL80ETC concert")
 			{
-				if(_innventory[i].Quality > 0)
+				if(item.Quality > 0)
 				{
-					if(_innventory[i].Name != "Sulfuras, Hand of Ragnaros")
+					if(item.Name != "Sulfuras, Hand of Ragnaros")
 					{
-						_innventory[i].Quality = _innventory[i].Quality - 1;
+						item.Quality = item.Quality - 1;
 					}
 				}
 			}
 			else
 			{
-				if(_innventory[i].Quality < 50)
+				if(item.Quality < 50)
 				{
-					_innventory[i].Quality = _innventory[i].Quality + 1;
+					item.Quality = item.Quality + 1;
 
-					if(_innventory[i].Name == "Backstage passes to a TAFKAL80ETC concert")
+					if(item.Name == "Backstage passes to a TAFKAL80ETC concert")
 					{
-						if(_innventory[i].SellIn < 11)
+						if(item.SellIn < 11)
 						{
-							if(_innventory[i].Quality < 50)
+							if(item.Quality < 50)
 							{
-								_innventory[i].Quality = _innventory[i].Quality + 1;
+								item.Quality = item.Quality + 1;
 							}
 						}
 
-						if(_innventory[i].SellIn < 6)
+						if(item.SellIn < 6)
 						{
-							if(_innventory[i].Quality < 50)
+							if(item.Quality < 50)
 							{
-								_innventory[i].Quality = _innventory[i].Quality + 1;
+								item.Quality = item.Quality + 1;
 							}
 						}
 					}
 				}
 			}
 
-			if(_innventory[i].Name != "Sulfuras, Hand of Ragnaros")
+			if(item.Name != "Sulfuras, Hand of Ragnaros")
 			{
-				_innventory[i].SellIn = _innventory[i].SellIn - 1;
+				item.SellIn = item.SellIn - 1;
 			}
 
-			if(_innventory[i].SellIn < 0)
+			if(item.SellIn < 0)
 			{
-				if(_innventory[i].Name != "Aged Brie")
+				if(item.Name != "Aged Brie")
 				{
-					if(_innventory[i].Name != "Backstage passes to a TAFKAL80ETC concert")
+					if(item.Name != "Backstage passes to a TAFKAL80ETC concert")
 					{
-						if(_innventory[i].Quality > 0)
+						if(item.Quality > 0)
 						{
-							if(_innventory[i].Name != "Sulfuras, Hand of Ragnaros")
+							if(item.Name != "Sulfuras, Hand of Ragnaros")
 							{
-								_innventory[i].Quality = _innventory[i].Quality - 1;
+								item.Quality = item.Quality - 1;
 							}
 						}
 					}
 					else
 					{
-						_innventory[i].Quality = _innventory[i].Quality - _innventory[i].Quality;
+						item.Quality = item.Quality - item.Quality;
 					}
 				}
 				else
 				{
-					if(_innventory[i].Quality < 50)
+					if(item.Quality < 50)
 					{
-						_innventory[i].Quality = _innventory[i].Quality + 1;
+						item.Quality = item.Quality + 1;
 					}
 				}
 			}
