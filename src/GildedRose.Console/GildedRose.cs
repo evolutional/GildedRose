@@ -54,17 +54,10 @@ namespace GildedRose.Console
 
 		public static void UpdateQuality(Item item)
 		{
-			if(!item.IsCheese() && !item.IsTickets())
-			{
-				if(!item.IsLegendary())
-				{
-					item.DecrementQuality();
-				}
-			}
-			else
+			if(item.IsCheese() || item.IsTickets())
 			{
 				item.IncrementQuality();
-				if (item.IsTickets())
+				if(item.IsTickets())
 				{
 					if(item.SellIn < 11)
 					{
@@ -77,6 +70,13 @@ namespace GildedRose.Console
 					}
 				}
 			}
+			else
+			{
+				if(!item.IsLegendary())
+				{
+					item.DecrementQuality();
+				}
+			}
 
 			if(!item.IsLegendary())
 			{
@@ -85,23 +85,23 @@ namespace GildedRose.Console
 
 			if(item.SellIn < 0)
 			{
-				if(!item.IsCheese())
+				if(item.IsCheese())
 				{
-					if(!item.IsTickets())
+					item.IncrementQuality();
+				}
+				else
+				{
+					if(item.IsTickets())
+					{
+						item.SetQualityToZero();
+					}
+					else
 					{
 						if(!item.IsLegendary())
 						{
 							item.DecrementQuality();
 						}
 					}
-					else
-					{
-						item.SetQualityToZero();
-					}
-				}
-				else
-				{
-					item.IncrementQuality();
 				}
 			}
 		}
