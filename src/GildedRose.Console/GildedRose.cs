@@ -57,33 +57,19 @@ namespace GildedRose.Console
 			if(item.IsCheese())
 			{
 				item.IncrementQuality();
-				if(item.IsTickets())
-				{
-					if(item.SellIn < 11)
-					{
-						item.IncrementQuality();
-					}
-
-					if(item.SellIn < 6)
-					{
-						item.IncrementQuality();
-					}
-				}
 			}
 			else if(item.IsTickets())
 			{
 				item.IncrementQuality();
-				if(item.IsTickets())
-				{
-					if(item.SellIn < 11)
-					{
-						item.IncrementQuality();
-					}
 
-					if(item.SellIn < 6)
-					{
-						item.IncrementQuality();
-					}
+				if(item.SellIn < 11)
+				{
+					item.IncrementQuality();
+				}
+
+				if(item.SellIn < 6)
+				{
+					item.IncrementQuality();
 				}
 			}
 			else if(!item.IsLegendary())
