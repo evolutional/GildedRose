@@ -54,11 +54,11 @@ namespace GildedRose.Console
 
 		public static void UpdateQuality(Item item)
 		{
-			if(!ItemExtensions.IsCheese(item) && !ItemExtensions.IsTickets(item))
+			if(!item.IsCheese() && !item.IsTickets())
 			{
-				if(!ItemExtensions.IsLegendary(item))
+				if(!item.IsLegendary())
 				{
-					ItemExtensions.DecrementQuality(item);
+					item.DecrementQuality();
 				}
 			}
 			else
@@ -67,35 +67,35 @@ namespace GildedRose.Console
 				{
 					item.Quality = item.Quality + 1;
 
-					if(ItemExtensions.IsTickets(item))
+					if(item.IsTickets())
 					{
 						if(item.SellIn < 11)
 						{
-							ItemExtensions.IncrementQuality(item);
+							item.IncrementQuality();
 						}
 
 						if(item.SellIn < 6)
 						{
-							ItemExtensions.IncrementQuality(item);
+							item.IncrementQuality();
 						}
 					}
 				}
 			}
 
-			if(!ItemExtensions.IsLegendary(item))
+			if(!item.IsLegendary())
 			{
 				item.SellIn = item.SellIn - 1;
 			}
 
 			if(item.SellIn < 0)
 			{
-				if(!ItemExtensions.IsCheese(item))
+				if(!item.IsCheese())
 				{
-					if(!ItemExtensions.IsTickets(item))
+					if(!item.IsTickets())
 					{
-						if (!ItemExtensions.IsLegendary(item))
+						if (!item.IsLegendary())
 						{
-							ItemExtensions.DecrementQuality(item);
+							item.DecrementQuality();
 						}
 					}
 					else
@@ -105,7 +105,7 @@ namespace GildedRose.Console
 				}
 				else
 				{
-					ItemExtensions.IncrementQuality(item);
+					item.IncrementQuality();
 				}
 			}
 		}
