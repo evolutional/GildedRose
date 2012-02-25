@@ -14,20 +14,22 @@ namespace GildedRose.Console
 
 		private static int ComputeNewQualityDecrement(int initialQuality)
 		{
-			if(initialQuality > 0)
+			int quality = initialQuality + -1;
+			if(quality < 0)
 			{
-				return initialQuality + -1;
+				quality = 0;
 			}
-			return initialQuality;
+			return quality;
 		}
 
 		private static int ComputeNewQualityIncrement(int initialQuality)
 		{
-			if(initialQuality < 50)
+			int newQuality = initialQuality + 1;
+			if(initialQuality > 50)
 			{
-				return initialQuality + 1;
+				newQuality = 50;
 			}
-			return initialQuality;
+			return newQuality;
 		}
 
 		public static bool IsLegendary(this GildedRose.Item item)
