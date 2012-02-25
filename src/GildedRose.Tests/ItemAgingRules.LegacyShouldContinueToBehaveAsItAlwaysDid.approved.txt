@@ -1,0 +1,357 @@
++5 Dexterity Vest, q=20, sell in 10 days
+Aged Brie, q=0, sell in 2 days
+Elixir of the Mongoose, q=7, sell in 5 days
+Sulfuras, Hand of Ragnaros, q=80, sell in 0 days
+Backstage passes to a TAFKAL80ETC concert, q=20, sell in 15 days
+Conjured Mana Cake, q=6, sell in 3 days
+
++5 Dexterity Vest, q=19, sell in 9 days
+Aged Brie, q=1, sell in 1 days
+Elixir of the Mongoose, q=6, sell in 4 days
+Sulfuras, Hand of Ragnaros, q=80, sell in 0 days
+Backstage passes to a TAFKAL80ETC concert, q=21, sell in 14 days
+Conjured Mana Cake, q=5, sell in 2 days
+
++5 Dexterity Vest, q=18, sell in 8 days
+Aged Brie, q=2, sell in 0 days
+Elixir of the Mongoose, q=5, sell in 3 days
+Sulfuras, Hand of Ragnaros, q=80, sell in 0 days
+Backstage passes to a TAFKAL80ETC concert, q=22, sell in 13 days
+Conjured Mana Cake, q=4, sell in 1 days
+
++5 Dexterity Vest, q=17, sell in 7 days
+Aged Brie, q=4, sell in -1 days
+Elixir of the Mongoose, q=4, sell in 2 days
+Sulfuras, Hand of Ragnaros, q=80, sell in 0 days
+Backstage passes to a TAFKAL80ETC concert, q=23, sell in 12 days
+Conjured Mana Cake, q=3, sell in 0 days
+
++5 Dexterity Vest, q=16, sell in 6 days
+Aged Brie, q=6, sell in -2 days
+Elixir of the Mongoose, q=3, sell in 1 days
+Sulfuras, Hand of Ragnaros, q=80, sell in 0 days
+Backstage passes to a TAFKAL80ETC concert, q=24, sell in 11 days
+Conjured Mana Cake, q=1, sell in -1 days
+
++5 Dexterity Vest, q=15, sell in 5 days
+Aged Brie, q=8, sell in -3 days
+Elixir of the Mongoose, q=2, sell in 0 days
+Sulfuras, Hand of Ragnaros, q=80, sell in 0 days
+Backstage passes to a TAFKAL80ETC concert, q=25, sell in 10 days
+Conjured Mana Cake, q=0, sell in -2 days
+
++5 Dexterity Vest, q=14, sell in 4 days
+Aged Brie, q=10, sell in -4 days
+Elixir of the Mongoose, q=0, sell in -1 days
+Sulfuras, Hand of Ragnaros, q=80, sell in 0 days
+Backstage passes to a TAFKAL80ETC concert, q=27, sell in 9 days
+Conjured Mana Cake, q=0, sell in -3 days
+
++5 Dexterity Vest, q=13, sell in 3 days
+Aged Brie, q=12, sell in -5 days
+Elixir of the Mongoose, q=0, sell in -2 days
+Sulfuras, Hand of Ragnaros, q=80, sell in 0 days
+Backstage passes to a TAFKAL80ETC concert, q=29, sell in 8 days
+Conjured Mana Cake, q=0, sell in -4 days
+
++5 Dexterity Vest, q=12, sell in 2 days
+Aged Brie, q=14, sell in -6 days
+Elixir of the Mongoose, q=0, sell in -3 days
+Sulfuras, Hand of Ragnaros, q=80, sell in 0 days
+Backstage passes to a TAFKAL80ETC concert, q=31, sell in 7 days
+Conjured Mana Cake, q=0, sell in -5 days
+
++5 Dexterity Vest, q=11, sell in 1 days
+Aged Brie, q=16, sell in -7 days
+Elixir of the Mongoose, q=0, sell in -4 days
+Sulfuras, Hand of Ragnaros, q=80, sell in 0 days
+Backstage passes to a TAFKAL80ETC concert, q=33, sell in 6 days
+Conjured Mana Cake, q=0, sell in -6 days
+
++5 Dexterity Vest, q=10, sell in 0 days
+Aged Brie, q=18, sell in -8 days
+Elixir of the Mongoose, q=0, sell in -5 days
+Sulfuras, Hand of Ragnaros, q=80, sell in 0 days
+Backstage passes to a TAFKAL80ETC concert, q=35, sell in 5 days
+Conjured Mana Cake, q=0, sell in -7 days
+
++5 Dexterity Vest, q=8, sell in -1 days
+Aged Brie, q=20, sell in -9 days
+Elixir of the Mongoose, q=0, sell in -6 days
+Sulfuras, Hand of Ragnaros, q=80, sell in 0 days
+Backstage passes to a TAFKAL80ETC concert, q=38, sell in 4 days
+Conjured Mana Cake, q=0, sell in -8 days
+
++5 Dexterity Vest, q=6, sell in -2 days
+Aged Brie, q=22, sell in -10 days
+Elixir of the Mongoose, q=0, sell in -7 days
+Sulfuras, Hand of Ragnaros, q=80, sell in 0 days
+Backstage passes to a TAFKAL80ETC concert, q=41, sell in 3 days
+Conjured Mana Cake, q=0, sell in -9 days
+
++5 Dexterity Vest, q=4, sell in -3 days
+Aged Brie, q=24, sell in -11 days
+Elixir of the Mongoose, q=0, sell in -8 days
+Sulfuras, Hand of Ragnaros, q=80, sell in 0 days
+Backstage passes to a TAFKAL80ETC concert, q=44, sell in 2 days
+Conjured Mana Cake, q=0, sell in -10 days
+
++5 Dexterity Vest, q=2, sell in -4 days
+Aged Brie, q=26, sell in -12 days
+Elixir of the Mongoose, q=0, sell in -9 days
+Sulfuras, Hand of Ragnaros, q=80, sell in 0 days
+Backstage passes to a TAFKAL80ETC concert, q=47, sell in 1 days
+Conjured Mana Cake, q=0, sell in -11 days
+
++5 Dexterity Vest, q=0, sell in -5 days
+Aged Brie, q=28, sell in -13 days
+Elixir of the Mongoose, q=0, sell in -10 days
+Sulfuras, Hand of Ragnaros, q=80, sell in 0 days
+Backstage passes to a TAFKAL80ETC concert, q=50, sell in 0 days
+Conjured Mana Cake, q=0, sell in -12 days
+
++5 Dexterity Vest, q=0, sell in -6 days
+Aged Brie, q=30, sell in -14 days
+Elixir of the Mongoose, q=0, sell in -11 days
+Sulfuras, Hand of Ragnaros, q=80, sell in 0 days
+Backstage passes to a TAFKAL80ETC concert, q=0, sell in -1 days
+Conjured Mana Cake, q=0, sell in -13 days
+
++5 Dexterity Vest, q=0, sell in -7 days
+Aged Brie, q=32, sell in -15 days
+Elixir of the Mongoose, q=0, sell in -12 days
+Sulfuras, Hand of Ragnaros, q=80, sell in 0 days
+Backstage passes to a TAFKAL80ETC concert, q=0, sell in -2 days
+Conjured Mana Cake, q=0, sell in -14 days
+
++5 Dexterity Vest, q=0, sell in -8 days
+Aged Brie, q=34, sell in -16 days
+Elixir of the Mongoose, q=0, sell in -13 days
+Sulfuras, Hand of Ragnaros, q=80, sell in 0 days
+Backstage passes to a TAFKAL80ETC concert, q=0, sell in -3 days
+Conjured Mana Cake, q=0, sell in -15 days
+
++5 Dexterity Vest, q=0, sell in -9 days
+Aged Brie, q=36, sell in -17 days
+Elixir of the Mongoose, q=0, sell in -14 days
+Sulfuras, Hand of Ragnaros, q=80, sell in 0 days
+Backstage passes to a TAFKAL80ETC concert, q=0, sell in -4 days
+Conjured Mana Cake, q=0, sell in -16 days
+
++5 Dexterity Vest, q=0, sell in -10 days
+Aged Brie, q=38, sell in -18 days
+Elixir of the Mongoose, q=0, sell in -15 days
+Sulfuras, Hand of Ragnaros, q=80, sell in 0 days
+Backstage passes to a TAFKAL80ETC concert, q=0, sell in -5 days
+Conjured Mana Cake, q=0, sell in -17 days
+
++5 Dexterity Vest, q=0, sell in -11 days
+Aged Brie, q=40, sell in -19 days
+Elixir of the Mongoose, q=0, sell in -16 days
+Sulfuras, Hand of Ragnaros, q=80, sell in 0 days
+Backstage passes to a TAFKAL80ETC concert, q=0, sell in -6 days
+Conjured Mana Cake, q=0, sell in -18 days
+
++5 Dexterity Vest, q=0, sell in -12 days
+Aged Brie, q=42, sell in -20 days
+Elixir of the Mongoose, q=0, sell in -17 days
+Sulfuras, Hand of Ragnaros, q=80, sell in 0 days
+Backstage passes to a TAFKAL80ETC concert, q=0, sell in -7 days
+Conjured Mana Cake, q=0, sell in -19 days
+
++5 Dexterity Vest, q=0, sell in -13 days
+Aged Brie, q=44, sell in -21 days
+Elixir of the Mongoose, q=0, sell in -18 days
+Sulfuras, Hand of Ragnaros, q=80, sell in 0 days
+Backstage passes to a TAFKAL80ETC concert, q=0, sell in -8 days
+Conjured Mana Cake, q=0, sell in -20 days
+
++5 Dexterity Vest, q=0, sell in -14 days
+Aged Brie, q=46, sell in -22 days
+Elixir of the Mongoose, q=0, sell in -19 days
+Sulfuras, Hand of Ragnaros, q=80, sell in 0 days
+Backstage passes to a TAFKAL80ETC concert, q=0, sell in -9 days
+Conjured Mana Cake, q=0, sell in -21 days
+
++5 Dexterity Vest, q=0, sell in -15 days
+Aged Brie, q=48, sell in -23 days
+Elixir of the Mongoose, q=0, sell in -20 days
+Sulfuras, Hand of Ragnaros, q=80, sell in 0 days
+Backstage passes to a TAFKAL80ETC concert, q=0, sell in -10 days
+Conjured Mana Cake, q=0, sell in -22 days
+
++5 Dexterity Vest, q=0, sell in -16 days
+Aged Brie, q=50, sell in -24 days
+Elixir of the Mongoose, q=0, sell in -21 days
+Sulfuras, Hand of Ragnaros, q=80, sell in 0 days
+Backstage passes to a TAFKAL80ETC concert, q=0, sell in -11 days
+Conjured Mana Cake, q=0, sell in -23 days
+
++5 Dexterity Vest, q=0, sell in -17 days
+Aged Brie, q=50, sell in -25 days
+Elixir of the Mongoose, q=0, sell in -22 days
+Sulfuras, Hand of Ragnaros, q=80, sell in 0 days
+Backstage passes to a TAFKAL80ETC concert, q=0, sell in -12 days
+Conjured Mana Cake, q=0, sell in -24 days
+
++5 Dexterity Vest, q=0, sell in -18 days
+Aged Brie, q=50, sell in -26 days
+Elixir of the Mongoose, q=0, sell in -23 days
+Sulfuras, Hand of Ragnaros, q=80, sell in 0 days
+Backstage passes to a TAFKAL80ETC concert, q=0, sell in -13 days
+Conjured Mana Cake, q=0, sell in -25 days
+
++5 Dexterity Vest, q=0, sell in -19 days
+Aged Brie, q=50, sell in -27 days
+Elixir of the Mongoose, q=0, sell in -24 days
+Sulfuras, Hand of Ragnaros, q=80, sell in 0 days
+Backstage passes to a TAFKAL80ETC concert, q=0, sell in -14 days
+Conjured Mana Cake, q=0, sell in -26 days
+
++5 Dexterity Vest, q=0, sell in -20 days
+Aged Brie, q=50, sell in -28 days
+Elixir of the Mongoose, q=0, sell in -25 days
+Sulfuras, Hand of Ragnaros, q=80, sell in 0 days
+Backstage passes to a TAFKAL80ETC concert, q=0, sell in -15 days
+Conjured Mana Cake, q=0, sell in -27 days
+
++5 Dexterity Vest, q=0, sell in -21 days
+Aged Brie, q=50, sell in -29 days
+Elixir of the Mongoose, q=0, sell in -26 days
+Sulfuras, Hand of Ragnaros, q=80, sell in 0 days
+Backstage passes to a TAFKAL80ETC concert, q=0, sell in -16 days
+Conjured Mana Cake, q=0, sell in -28 days
+
++5 Dexterity Vest, q=0, sell in -22 days
+Aged Brie, q=50, sell in -30 days
+Elixir of the Mongoose, q=0, sell in -27 days
+Sulfuras, Hand of Ragnaros, q=80, sell in 0 days
+Backstage passes to a TAFKAL80ETC concert, q=0, sell in -17 days
+Conjured Mana Cake, q=0, sell in -29 days
+
++5 Dexterity Vest, q=0, sell in -23 days
+Aged Brie, q=50, sell in -31 days
+Elixir of the Mongoose, q=0, sell in -28 days
+Sulfuras, Hand of Ragnaros, q=80, sell in 0 days
+Backstage passes to a TAFKAL80ETC concert, q=0, sell in -18 days
+Conjured Mana Cake, q=0, sell in -30 days
+
++5 Dexterity Vest, q=0, sell in -24 days
+Aged Brie, q=50, sell in -32 days
+Elixir of the Mongoose, q=0, sell in -29 days
+Sulfuras, Hand of Ragnaros, q=80, sell in 0 days
+Backstage passes to a TAFKAL80ETC concert, q=0, sell in -19 days
+Conjured Mana Cake, q=0, sell in -31 days
+
++5 Dexterity Vest, q=0, sell in -25 days
+Aged Brie, q=50, sell in -33 days
+Elixir of the Mongoose, q=0, sell in -30 days
+Sulfuras, Hand of Ragnaros, q=80, sell in 0 days
+Backstage passes to a TAFKAL80ETC concert, q=0, sell in -20 days
+Conjured Mana Cake, q=0, sell in -32 days
+
++5 Dexterity Vest, q=0, sell in -26 days
+Aged Brie, q=50, sell in -34 days
+Elixir of the Mongoose, q=0, sell in -31 days
+Sulfuras, Hand of Ragnaros, q=80, sell in 0 days
+Backstage passes to a TAFKAL80ETC concert, q=0, sell in -21 days
+Conjured Mana Cake, q=0, sell in -33 days
+
++5 Dexterity Vest, q=0, sell in -27 days
+Aged Brie, q=50, sell in -35 days
+Elixir of the Mongoose, q=0, sell in -32 days
+Sulfuras, Hand of Ragnaros, q=80, sell in 0 days
+Backstage passes to a TAFKAL80ETC concert, q=0, sell in -22 days
+Conjured Mana Cake, q=0, sell in -34 days
+
++5 Dexterity Vest, q=0, sell in -28 days
+Aged Brie, q=50, sell in -36 days
+Elixir of the Mongoose, q=0, sell in -33 days
+Sulfuras, Hand of Ragnaros, q=80, sell in 0 days
+Backstage passes to a TAFKAL80ETC concert, q=0, sell in -23 days
+Conjured Mana Cake, q=0, sell in -35 days
+
++5 Dexterity Vest, q=0, sell in -29 days
+Aged Brie, q=50, sell in -37 days
+Elixir of the Mongoose, q=0, sell in -34 days
+Sulfuras, Hand of Ragnaros, q=80, sell in 0 days
+Backstage passes to a TAFKAL80ETC concert, q=0, sell in -24 days
+Conjured Mana Cake, q=0, sell in -36 days
+
++5 Dexterity Vest, q=0, sell in -30 days
+Aged Brie, q=50, sell in -38 days
+Elixir of the Mongoose, q=0, sell in -35 days
+Sulfuras, Hand of Ragnaros, q=80, sell in 0 days
+Backstage passes to a TAFKAL80ETC concert, q=0, sell in -25 days
+Conjured Mana Cake, q=0, sell in -37 days
+
++5 Dexterity Vest, q=0, sell in -31 days
+Aged Brie, q=50, sell in -39 days
+Elixir of the Mongoose, q=0, sell in -36 days
+Sulfuras, Hand of Ragnaros, q=80, sell in 0 days
+Backstage passes to a TAFKAL80ETC concert, q=0, sell in -26 days
+Conjured Mana Cake, q=0, sell in -38 days
+
++5 Dexterity Vest, q=0, sell in -32 days
+Aged Brie, q=50, sell in -40 days
+Elixir of the Mongoose, q=0, sell in -37 days
+Sulfuras, Hand of Ragnaros, q=80, sell in 0 days
+Backstage passes to a TAFKAL80ETC concert, q=0, sell in -27 days
+Conjured Mana Cake, q=0, sell in -39 days
+
++5 Dexterity Vest, q=0, sell in -33 days
+Aged Brie, q=50, sell in -41 days
+Elixir of the Mongoose, q=0, sell in -38 days
+Sulfuras, Hand of Ragnaros, q=80, sell in 0 days
+Backstage passes to a TAFKAL80ETC concert, q=0, sell in -28 days
+Conjured Mana Cake, q=0, sell in -40 days
+
++5 Dexterity Vest, q=0, sell in -34 days
+Aged Brie, q=50, sell in -42 days
+Elixir of the Mongoose, q=0, sell in -39 days
+Sulfuras, Hand of Ragnaros, q=80, sell in 0 days
+Backstage passes to a TAFKAL80ETC concert, q=0, sell in -29 days
+Conjured Mana Cake, q=0, sell in -41 days
+
++5 Dexterity Vest, q=0, sell in -35 days
+Aged Brie, q=50, sell in -43 days
+Elixir of the Mongoose, q=0, sell in -40 days
+Sulfuras, Hand of Ragnaros, q=80, sell in 0 days
+Backstage passes to a TAFKAL80ETC concert, q=0, sell in -30 days
+Conjured Mana Cake, q=0, sell in -42 days
+
++5 Dexterity Vest, q=0, sell in -36 days
+Aged Brie, q=50, sell in -44 days
+Elixir of the Mongoose, q=0, sell in -41 days
+Sulfuras, Hand of Ragnaros, q=80, sell in 0 days
+Backstage passes to a TAFKAL80ETC concert, q=0, sell in -31 days
+Conjured Mana Cake, q=0, sell in -43 days
+
++5 Dexterity Vest, q=0, sell in -37 days
+Aged Brie, q=50, sell in -45 days
+Elixir of the Mongoose, q=0, sell in -42 days
+Sulfuras, Hand of Ragnaros, q=80, sell in 0 days
+Backstage passes to a TAFKAL80ETC concert, q=0, sell in -32 days
+Conjured Mana Cake, q=0, sell in -44 days
+
++5 Dexterity Vest, q=0, sell in -38 days
+Aged Brie, q=50, sell in -46 days
+Elixir of the Mongoose, q=0, sell in -43 days
+Sulfuras, Hand of Ragnaros, q=80, sell in 0 days
+Backstage passes to a TAFKAL80ETC concert, q=0, sell in -33 days
+Conjured Mana Cake, q=0, sell in -45 days
+
++5 Dexterity Vest, q=0, sell in -39 days
+Aged Brie, q=50, sell in -47 days
+Elixir of the Mongoose, q=0, sell in -44 days
+Sulfuras, Hand of Ragnaros, q=80, sell in 0 days
+Backstage passes to a TAFKAL80ETC concert, q=0, sell in -34 days
+Conjured Mana Cake, q=0, sell in -46 days
+
++5 Dexterity Vest, q=0, sell in -40 days
+Aged Brie, q=50, sell in -48 days
+Elixir of the Mongoose, q=0, sell in -45 days
+Sulfuras, Hand of Ragnaros, q=80, sell in 0 days
+Backstage passes to a TAFKAL80ETC concert, q=0, sell in -35 days
+Conjured Mana Cake, q=0, sell in -47 days
+

@@ -38,6 +38,8 @@
 
  * */
 
+using System.Collections.Generic;
+
 namespace GildedRose.Console
 {
 	public partial class GildedRose
@@ -117,5 +119,7 @@ namespace GildedRose.Console
 				}
 			}
 		}
+
+		public IEnumerable<Item> InventoryTestAccess { get { return _innventory; } }
 	}
 }
