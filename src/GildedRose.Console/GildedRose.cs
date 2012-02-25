@@ -70,12 +70,9 @@ namespace GildedRose.Console
 					}
 				}
 			}
-			else
+			else if(!item.IsLegendary())
 			{
-				if(!item.IsLegendary())
-				{
-					item.DecrementQuality();
-				}
+				item.DecrementQuality();
 			}
 
 			if(!item.IsLegendary())
@@ -89,19 +86,13 @@ namespace GildedRose.Console
 				{
 					item.IncrementQuality();
 				}
-				else
+				else if(item.IsTickets())
 				{
-					if(item.IsTickets())
-					{
-						item.SetQualityToZero();
-					}
-					else
-					{
-						if(!item.IsLegendary())
-						{
-							item.DecrementQuality();
-						}
-					}
+					item.SetQualityToZero();
+				}
+				else if(!item.IsLegendary())
+				{
+					item.DecrementQuality();
 				}
 			}
 		}
