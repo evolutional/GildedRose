@@ -65,28 +65,28 @@ namespace GildedRose.Console
 				if (item.IsCheese())
 				{
 					item.AdjustQuality(1);
+					item.AdjustQuality(1);
 				}
 				else if (item.IsTickets())
 				{
 					var adjustment = item.SellIn < 5 ? 3 : (item.SellIn < 10 ? 2 : 1);
 					item.AdjustQuality(adjustment);
-				}
-				else
-				{
-					item.AdjustQuality(-1);
-				}
-
-				if (item.IsCheese())
-				{
-					item.AdjustQuality(1);
-				}
-				else if(item.IsTickets())
-				{
 					item.SetQualityToZero();
 				}
 				else
 				{
 					item.AdjustQuality(-1);
+					item.AdjustQuality(-1);
+				}
+
+				if (item.IsCheese())
+				{
+				}
+				else if(item.IsTickets())
+				{
+				}
+				else
+				{
 				}
 			}
 			else
