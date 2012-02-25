@@ -54,7 +54,7 @@ namespace GildedRose.Console
 
 		public static void UpdateQuality(Item item)
 		{
-			if(IsNotCheese(item) && item.Name != "Backstage passes to a TAFKAL80ETC concert")
+			if(!IsCheese(item) && item.Name != "Backstage passes to a TAFKAL80ETC concert")
 			{
 				if(item.Quality > 0)
 				{
@@ -125,9 +125,9 @@ namespace GildedRose.Console
 			}
 		}
 
-		private static bool IsNotCheese(Item item)
+		private static bool IsCheese(Item item)
 		{
-			return item.Name != "Aged Brie";
+			return item.Name == "Aged Brie";
 		}
 
 		public IEnumerable<Item> InventoryTestAccess { get { return _innventory; } }
