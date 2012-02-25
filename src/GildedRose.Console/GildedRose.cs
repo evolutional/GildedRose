@@ -46,9 +46,9 @@ namespace GildedRose.Console
 	{
 		public void UpdateQuality()
 		{
-			for(int i = 0; i < _innventory.Count; i++)
+			foreach(var t in _innventory)
 			{
-				UpdateQuality(_innventory[i]);
+				UpdateQuality(t);
 			}
 		}
 
