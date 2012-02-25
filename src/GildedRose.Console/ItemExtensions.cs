@@ -32,5 +32,10 @@ namespace GildedRose.Console
 		{
 			return item.Name == "Aged Brie";
 		}
+
+		public static void SetQualityToZero(this GildedRose.Item item)
+		{
+			item.Quality = 0;
+		}
 	}
 }

@@ -96,7 +96,7 @@ namespace GildedRose.Console
 					}
 					else
 					{
-						item.Quality = item.Quality - item.Quality;
+						item.SetQualityToZero();
 					}
 				}
 				else
