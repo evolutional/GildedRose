@@ -54,21 +54,21 @@ namespace GildedRose.Console
 
 		public static void UpdateQuality(Item item)
 		{
-			if(item.IsCheese())
+			item.AgeOneDay();
+
+			if (item.IsCheese())
 			{
 				item.AdjustQuality(1);
 			}
 			else if(item.IsTickets())
 			{
-				var adjustment = item.SellIn < 6 ? 3 : (item.SellIn < 11 ? 2 : 1);
+				var adjustment = item.SellIn < 5 ? 3 : (item.SellIn < 10 ? 2 : 1);
 				item.AdjustQuality(adjustment);
 			}
 			else
 			{
 				item.AdjustQuality(-1);
 			}
-
-			item.AgeOneDay();
 
 			if(item.SellIn < 0)
 			{
