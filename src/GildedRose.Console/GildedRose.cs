@@ -55,11 +55,6 @@ namespace GildedRose.Console
 		public static void AgeItem(Item item)
 		{
 			item.AgeOneDay();
-			UpdateQuality(item);
-		}
-
-		private static void UpdateQuality(Item item)
-		{
 			if(item.IsExpired())
 			{
 				UpdateQualityForExpiredItem(item);
