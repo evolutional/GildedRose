@@ -56,25 +56,25 @@ namespace GildedRose.Console
 		{
 			if(item.IsCheese())
 			{
-				item.IncrementQuality(1);
+				item.AdjustQuality(1);
 			}
 			else if(item.IsTickets())
 			{
-				item.IncrementQuality(1);
+				item.AdjustQuality(1);
 
 				if(item.SellIn < 11)
 				{
-					item.IncrementQuality(1);
+					item.AdjustQuality(1);
 				}
 
 				if(item.SellIn < 6)
 				{
-					item.IncrementQuality(1);
+					item.AdjustQuality(1);
 				}
 			}
 			else
 			{
-				item.DecrementQuality(-1);
+				item.AdjustQuality(-1);
 			}
 
 			item.AgeOneDay();
@@ -83,7 +83,7 @@ namespace GildedRose.Console
 			{
 				if(item.IsCheese())
 				{
-					item.IncrementQuality(1);
+					item.AdjustQuality(1);
 				}
 				else if(item.IsTickets())
 				{
@@ -91,7 +91,7 @@ namespace GildedRose.Console
 				}
 				else
 				{
-					item.DecrementQuality(-1);
+					item.AdjustQuality(-1);
 				}
 			}
 		}

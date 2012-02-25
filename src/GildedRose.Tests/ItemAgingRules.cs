@@ -30,7 +30,7 @@ namespace GildedRose.Tests
 		public void ItemQualityShouldAlwaysRemainWithinAllowedMax()
 		{
 			var testSubject = new Console.GildedRose.Item {Quality = 3};
-			testSubject.IncrementQuality(90);
+			testSubject.AdjustQuality(90);
 			testSubject.Quality.Should().Be(50);
 		}
 
@@ -38,7 +38,7 @@ namespace GildedRose.Tests
 		public void ItemQualityShouldAlwaysRemainWithinAllowedMin()
 		{
 			var testSubject = new Console.GildedRose.Item {Quality = 3};
-			testSubject.DecrementQuality(-90);
+			testSubject.AdjustQuality(-90);
 			testSubject.Quality.Should().Be(0);
 		}
 

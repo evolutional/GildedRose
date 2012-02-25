@@ -4,13 +4,7 @@ namespace GildedRose.Console
 {
 	public static class ItemExtensions
 	{
-		public static void DecrementQuality(this GildedRose.Item item, int amount)
-		{
-			if (IsLegendary(item)) return;
-			item.Quality = ComputeNewQuality(item.Quality, amount);
-		}
-
-		public static void IncrementQuality(this GildedRose.Item item, int amount)
+		public static void AdjustQuality(this GildedRose.Item item, int amount)
 		{
 			if (IsLegendary(item)) return;
 			item.Quality = ComputeNewQuality(item.Quality, amount);
