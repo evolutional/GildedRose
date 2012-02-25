@@ -16,16 +16,12 @@ namespace GildedRose.Console
 			item.Quality = 0;
 		}
 
-		private static int ComputeNewQuality(int initialQuality, int amount)
+		public static void AgeOneDay(this GildedRose.Item item)
 		{
-			int quality = initialQuality + amount;
-			quality = Math.Max(0, Math.Min(50, quality));
-			return quality;
-		}
-
-		private static bool IsLegendary(this GildedRose.Item item)
-		{
-			return item.Name == "Sulfuras, Hand of Ragnaros";
+			if(!item.IsLegendary())
+			{
+				item.SellIn = item.SellIn - 1;
+			}
 		}
 
 		public static bool IsTickets(this GildedRose.Item item)
@@ -38,12 +34,16 @@ namespace GildedRose.Console
 			return item.Name == "Aged Brie";
 		}
 
-		public static void AgeOneDay(this GildedRose.Item item)
+		private static bool IsLegendary(this GildedRose.Item item)
 		{
-			if(!item.IsLegendary())
-			{
-				item.SellIn = item.SellIn - 1;
-			}
+			return item.Name == "Sulfuras, Hand of Ragnaros";
+		}
+
+		private static int ComputeNewQuality(int initialQuality, int amount)
+		{
+			int quality = initialQuality + amount;
+			quality = Math.Max(0, Math.Min(50, quality));
+			return quality;
 		}
 	}
 }
