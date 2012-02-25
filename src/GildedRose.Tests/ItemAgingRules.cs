@@ -27,6 +27,18 @@ namespace GildedRose.Tests
 		}
 
 		[Test]
+		public void ItemShouldExpireWhenSellInIsNegative()
+		{
+			new Console.GildedRose.Item {SellIn = -1}.IsExpired().Should().BeTrue();
+		}
+
+		[Test]
+		public void ItemShouldnotBeExpiredOnLastDayOfSelling()
+		{
+			new Console.GildedRose.Item {SellIn = 0}.IsExpired().Should().BeFalse();
+		}
+
+		[Test]
 		public void ItemQualityShouldAlwaysRemainWithinAllowedMax()
 		{
 			var testSubject = new Console.GildedRose.Item {Quality = 3};

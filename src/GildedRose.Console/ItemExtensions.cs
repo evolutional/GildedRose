@@ -45,5 +45,10 @@ namespace GildedRose.Console
 			quality = Math.Max(0, Math.Min(50, quality));
 			return quality;
 		}
+
+		public static bool IsExpired(this GildedRose.Item item)
+		{
+			return item.SellIn < 0;
+		}
 	}
 }

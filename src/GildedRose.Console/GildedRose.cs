@@ -74,7 +74,7 @@ namespace GildedRose.Console
 				item.AdjustQuality(-1);
 			}
 
-			if(item.SellIn < 0)
+			if(item.IsExpired())
 			{
 				if(item.IsCheese())
 				{
