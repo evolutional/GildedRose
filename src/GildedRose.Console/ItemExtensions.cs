@@ -6,7 +6,7 @@ namespace GildedRose.Console
 		{
 			if(item.Quality > 0)
 			{
-				AdjustQuality(item, -1);
+				item.Quality = item.Quality + -1;
 			}
 		}
 
@@ -14,13 +14,8 @@ namespace GildedRose.Console
 		{
 			if(item.Quality < 50)
 			{
-				AdjustQuality(item, 1);
+				item.Quality = item.Quality + 1;
 			}
-		}
-
-		private static void AdjustQuality(GildedRose.Item item, int amount)
-		{
-			item.Quality = item.Quality + amount;
 		}
 
 		public static bool IsLegendary(this GildedRose.Item item)
