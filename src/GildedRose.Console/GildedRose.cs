@@ -63,11 +63,8 @@ namespace GildedRose.Console
 			}
 			else
 			{
-				if(item.Quality < 50)
-				{
-					item.Quality = item.Quality + 1;
-				}
-				if(item.IsTickets())
+				item.IncrementQuality();
+				if (item.IsTickets())
 				{
 					if(item.SellIn < 11)
 					{
