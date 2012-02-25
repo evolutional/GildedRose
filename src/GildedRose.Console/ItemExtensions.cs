@@ -12,12 +12,18 @@ namespace GildedRose.Console
 
 		public static void IncrementQuality(this GildedRose.Item item)
 		{
+			var newQuality = ComputeNewQualityIncrement(item);
+			item.Quality = newQuality;
+		}
+
+		private static int ComputeNewQualityIncrement(GildedRose.Item item)
+		{
 			int newQuality = item.Quality;
 			if(item.Quality < 50)
 			{
 				newQuality = item.Quality + 1;
 			}
-			item.Quality = newQuality;
+			return newQuality;
 		}
 
 		public static bool IsLegendary(this GildedRose.Item item)
