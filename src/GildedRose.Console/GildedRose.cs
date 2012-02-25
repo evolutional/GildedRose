@@ -60,17 +60,8 @@ namespace GildedRose.Console
 			}
 			else if(item.IsTickets())
 			{
-				item.AdjustQuality(1);
-
-				if(item.SellIn < 11)
-				{
-					item.AdjustQuality(1);
-				}
-
-				if(item.SellIn < 6)
-				{
-					item.AdjustQuality(1);
-				}
+				var adjustment = item.SellIn < 6 ? 3 : (item.SellIn < 11 ? 2 : 1);
+				item.AdjustQuality(adjustment);
 			}
 			else
 			{
