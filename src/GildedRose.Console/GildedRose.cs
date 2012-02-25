@@ -77,10 +77,7 @@ namespace GildedRose.Console
 				item.DecrementQuality();
 			}
 
-			if(!item.IsLegendary())
-			{
-				item.SellIn = item.SellIn - 1;
-			}
+			item.AgeOneDay();
 
 			if(item.SellIn < 0)
 			{

@@ -36,7 +36,7 @@ namespace GildedRose.Console
 			return quality;
 		}
 
-		public static bool IsLegendary(this GildedRose.Item item)
+		private static bool IsLegendary(this GildedRose.Item item)
 		{
 			return item.Name == "Sulfuras, Hand of Ragnaros";
 		}
@@ -49,6 +49,14 @@ namespace GildedRose.Console
 		public static bool IsCheese(this GildedRose.Item item)
 		{
 			return item.Name == "Aged Brie";
+		}
+
+		public static void AgeOneDay(this GildedRose.Item item)
+		{
+			if(!item.IsLegendary())
+			{
+				item.SellIn = item.SellIn - 1;
+			}
 		}
 	}
 }
