@@ -58,10 +58,7 @@ namespace GildedRose.Console
 			{
 				if(!IsLegendary(item))
 				{
-					if(item.Quality > 0)
-					{
-						item.Quality = item.Quality - 1;
-					}
+					DecrementQuality(item);
 				}
 			}
 			else
@@ -98,10 +95,7 @@ namespace GildedRose.Console
 					{
 						if (!IsLegendary(item))
 						{
-							if (item.Quality > 0)
-							{
-								item.Quality = item.Quality - 1;
-							}
+							DecrementQuality(item);
 						}
 					}
 					else
@@ -113,6 +107,14 @@ namespace GildedRose.Console
 				{
 					IncrementQuality(item);
 				}
+			}
+		}
+
+		private static void DecrementQuality(Item item)
+		{
+			if(item.Quality > 0)
+			{
+				item.Quality = item.Quality - 1;
 			}
 		}
 
