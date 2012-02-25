@@ -12,8 +12,7 @@ namespace GildedRose.Console
 
 		public static void IncrementQuality(this GildedRose.Item item)
 		{
-			var newQuality = ComputeNewQualityIncrement(item);
-			item.Quality = newQuality;
+			item.Quality = ComputeNewQualityIncrement(item);
 		}
 
 		private static int ComputeNewQualityIncrement(GildedRose.Item item)
