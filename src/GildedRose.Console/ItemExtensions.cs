@@ -6,12 +6,20 @@ namespace GildedRose.Console
 	{
 		public static void DecrementQuality(this GildedRose.Item item)
 		{
+			if (IsLegendary(item)) return;
 			item.Quality = ComputeNewQualityDecrement(item.Quality);
 		}
 
 		public static void IncrementQuality(this GildedRose.Item item)
 		{
+			if (IsLegendary(item)) return;
 			item.Quality = ComputeNewQualityIncrement(item.Quality);
+		}
+
+		public static void SetQualityToZero(this GildedRose.Item item)
+		{
+			if (IsLegendary(item)) return;
+			item.Quality = 0;
 		}
 
 		private static int ComputeNewQualityDecrement(int initialQuality)
@@ -41,11 +49,6 @@ namespace GildedRose.Console
 		public static bool IsCheese(this GildedRose.Item item)
 		{
 			return item.Name == "Aged Brie";
-		}
-
-		public static void SetQualityToZero(this GildedRose.Item item)
-		{
-			item.Quality = 0;
 		}
 	}
 }
