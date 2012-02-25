@@ -7,21 +7,34 @@
 
   <style type="text/css">
     body {
-      margin-top: 1.0em;
-      background-color: #6ab617;
-      font-family: Helvetica, Arial, FreeSans, san-serif;
-      color: #ffffff;
-    }
+	  margin-top: 1.0em;
+	  background-color: #FFFFFF;
+	  font-family: Helvetica, Arial, FreeSans, san-serif;
+	  color: #000000;
+  }
     #container {
       margin: 0 auto;
       width: 700px;
     }
-    h1 { font-size: 3.8em; color: #9549e8; margin-bottom: 3px; }
+    h1 {
+	  font-size: 3.8em;
+	  color: #800000;
+	  margin-bottom: 3px;
+  }
     h1 .small { font-size: 0.4em; }
     h1 a { text-decoration: none }
-    h2 { font-size: 1.5em; color: #9549e8; }
-    h3 { text-align: center; color: #9549e8; }
-    a { color: #9549e8; }
+    h2 { font-size: 1.5em; color: #800000; }
+    dt { font-weight:bold; margin-top:0.4em; }
+    dd { margin-left: 1.8em; }
+    .attribution {
+	 margin-left:2.5em;
+	 margin-top:0em;
+	 font-style:italic;
+}
+    h3 { text-align: center; color: #800000; }
+    a {
+	  color: #800000;
+  }
     .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
     .download { float: right; }
     pre { background: #000; color: #fff; padding: 15px;}
@@ -42,44 +55,41 @@
         <img border="0" width="90" src="https://github.com/images/modules/download/tar.png"></a>
     </div>
 
-    <h1><a href="https://github.com/arlobelshee/GildedRose">GildedRose</a>
-      <span class="small">by <a href="https://github.com/arlobelshee">arlobelshee</a></span></h1>
+    <h1><a href="https://github.com/arlobelshee/GildedRose">GildedRose</a></h1>
+    <h2 class="attribution">by <a href="https://github.com/arlobelshee">arlobelshee</a></h2>
 
     <div class="description">
       A Kata to practice your refactoring.
     </div>
 
     
-      <p>This is a simple example of some indebted code. It is only about 30 lines long, yet it feels like nasty legacy. It gets to several of the core anti-patterns that cause debt in real systems:
+      <p>This is a simple example of some indebted code. It is only about 30 lines long, yet it feels like nasty legacy. It gets to several of the core anti-patterns that cause debt in real systems:</p>
 
- * Primitive Obsession. In this case, the Item class is an Anemic Domain Model Object. It doesn't have any members, and you aren't allowed to put any onto it.
- * Operating by side effect. The UpdateQuality method gets its values by direct access to a variable outside its scope (a member variable, in this case), and then makes its changes by setting values by side effect. It neither takes nor returns any values.
-* Insufficient tests. There is one test, and it always passes. It used to also be poorly named, but I found that people then never renamed it to something useful. This way, I'm hoping that people will at least use good names for subsequent tests.
+<dl>
+<dt>Primitive Obsession</dt>
+<dd>In this case, the Item class is an Anemic Domain Model Object. It doesn't have any members, and you aren't allowed to put any onto it.</dd>
+<dt>Operating by side effect</dt>
+<dd>The UpdateQuality method gets its values by direct access to a variable outside its scope (a member variable, in this case), and then makes its changes by setting values by side effect. It neither takes nor returns any values.</dd>
+<dt>Insufficient tests</dt>
+<dd>There is one test, and it always passes. It used to also be poorly named, but I found that people then never renamed it to something useful. This way, I'm hoping that people will at least use good names for subsequent tests.</dd>
+</dl>
 
-The code is also legacy code (code that has business value, so is risky to screw up). It has the following common characteristics of legacy code:
+<p>The code is also legacy code (code that has business value, so is risky to screw up). It has the following common characteristics of legacy code:</p>
 
- * High business value. This is the core algorithm for the inventory processing system, and includes all the business logic rules for managing the inventory.
- * It works. You are being asked to add a new feature. However, before you start, the code is a bug-free, correct implementation of all previously existing features.</p>
-    
+<dl>
+<dt>High business value</dt>
+<dd>This is the core algorithm for the inventory processing system, and includes all the business logic rules for managing the inventory.</dd>
+<dt>It works</dt>
+<dd>You are being asked to add a new feature. However, before you start, the code is a bug-free, correct implementation of all previously existing features.</dd>
+</dl>
 
-    
-
-    
-
-    
       <h2>License</h2>
       <p>MIT</p>
     
-
-    
       <h2>Authors</h2>
-      <p>Arlo Belshee (arlo.belshee@live.com)<br/>Bobby Johnson (bobby.johnson@gmail.com)<br/>Ian Davis (ian@innovatian.com)<br/>      </p>
-    
-
-    
-      <h2>Contact</h2>
-      <p> (arlo.belshee@live.com)<br/>      </p>
-    
+      <p><a href="https://github.com/arlobelshee">Arlo Belshee</a><br/>
+      Bobby Johnson (bobby.johnson@gmail.com)<br/>
+      Ian Davis (ian@innovatian.com)</p>
 
     <h2>Download</h2>
     <p>
