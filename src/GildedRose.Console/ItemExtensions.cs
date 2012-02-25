@@ -17,15 +17,15 @@ namespace GildedRose.Console
 		private static int ComputeNewQualityDecrement(int initialQuality)
 		{
 			int quality = initialQuality + -1;
-			quality = Math.Max(0, quality);
+			quality = Math.Max(0, Math.Min(50, quality));
 			return quality;
 		}
 
 		private static int ComputeNewQualityIncrement(int initialQuality)
 		{
-			int newQuality = initialQuality + 1;
-			newQuality = Math.Min(50, newQuality);
-			return newQuality;
+			int quality = initialQuality + 1;
+			quality = Math.Max(0, Math.Min(50, quality));
+			return quality;
 		}
 
 		public static bool IsLegendary(this GildedRose.Item item)
