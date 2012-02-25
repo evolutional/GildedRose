@@ -46,7 +46,7 @@ namespace GildedRose.Console
 	{
 		public void UpdateQuality()
 		{
-			foreach(var t in _innventory)
+			foreach(Item t in _innventory)
 			{
 				UpdateQuality(t);
 			}
@@ -56,9 +56,9 @@ namespace GildedRose.Console
 		{
 			if(!IsCheese(item) && !IsTickets(item))
 			{
-				if(item.Quality > 0)
+				if(!IsLegendary(item))
 				{
-					if(!IsLegendary(item))
+					if(item.Quality > 0)
 					{
 						item.Quality = item.Quality - 1;
 					}
@@ -96,9 +96,9 @@ namespace GildedRose.Console
 				{
 					if(!IsTickets(item))
 					{
-						if(item.Quality > 0)
+						if (!IsLegendary(item))
 						{
-							if(!IsLegendary(item))
+							if (item.Quality > 0)
 							{
 								item.Quality = item.Quality - 1;
 							}
