@@ -46,9 +46,9 @@ namespace GildedRose.Console
 	{
 		public void UpdateQuality()
 		{
-			for(int i = 0; i < _innventory.Count; i++)
+			foreach(Item t in _innventory)
 			{
-				AgeOneDay(_innventory[i]);
+				AgeOneDay(t);
 			}
 		}
 
