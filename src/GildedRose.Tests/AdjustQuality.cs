@@ -33,7 +33,9 @@ namespace GildedRose.Tests
 		public object[][] IncrementQualityData = new[]
 			{
 				new object[] {30, 31, false},
+				new object[] {30, 32, true},
 				new object[] {50, 50, false},
+				new object[] {49, 50, true},
 			};
 
 		[Test, TestCaseSource("IncrementQualityData")]

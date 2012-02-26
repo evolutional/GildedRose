@@ -106,16 +106,22 @@ namespace GildedRose.Console
 
 		public static void IncrementQuality(Item item)
 		{
-			if(item.Quality < 50)
-			{
-				item.Quality = item.Quality + 1;
-			}
+			IncrementQualityImpl(item);
+			if (item.Name.StartsWith("Conjured ")) IncrementQualityImpl(item);
 		}
 
 		public static void DecrementQuality(Item item)
 		{
 			DecrementQualityImpl(item);
 			if(item.Name.StartsWith("Conjured ")) DecrementQualityImpl(item);
+		}
+
+		private static void IncrementQualityImpl(Item item)
+		{
+			if(item.Quality < 50)
+			{
+				item.Quality = item.Quality + 1;
+			}
 		}
 
 		private static void DecrementQualityImpl(Item item)
