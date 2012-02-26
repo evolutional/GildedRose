@@ -7,7 +7,7 @@ namespace GildedRose.Tests
 	[TestFixture]
 	public class UpdatingQuality
 	{
-		private const string TicketsName = "Backstage passes to a TAFKAL80ETC concert";
+		public const string TicketsName = "Backstage passes to a TAFKAL80ETC concert";
 		private static readonly Console.GildedRose.Item _cheese = _Make("Aged Brie");
 		private static readonly Console.GildedRose.Item _normalItem = _Make("Some random BS item");
 		private static readonly Console.GildedRose.Item _uncommonTickets = _Make(TicketsName, 8);
@@ -55,7 +55,7 @@ namespace GildedRose.Tests
 				new object[] {"normal item", _normalItem, -1, -2},
 			};
 
-		private static Console.GildedRose.Item _Make(string name, int sellIn = 0)
+		public static Console.GildedRose.Item _Make(string name, int sellIn = 0)
 		{
 			return new Console.GildedRose.Item { Name = name, Quality = 25, SellIn = sellIn };
 		}
