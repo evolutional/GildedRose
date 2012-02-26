@@ -114,11 +114,17 @@ namespace GildedRose.Console
 
 		public static void DecrementQuality(Item item)
 		{
+			DecrementQualityImpl(item);
+			if(item.Name.StartsWith("Conjured ")) DecrementQualityImpl(item);
+		}
+
+		private static void DecrementQualityImpl(Item item)
+		{
 			if(item.Quality > 0)
 			{
 				if(item.Name != "Sulfuras, Hand of Ragnaros")
 				{
-					item.Quality = item.Quality - (item.Name.StartsWith("Conjured ") ? 2 : 1);
+					item.Quality = item.Quality - 1;
 				}
 			}
 		}

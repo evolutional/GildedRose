@@ -19,6 +19,7 @@ namespace GildedRose.Tests
 				new object[] {30, 29, false},
 				new object[] {30, 28, true},
 				new object[] {0, 0, false},
+				new object[] {1, 0, true},
 			};
 
 		[Test, TestCaseSource("DecrementQualityData")]

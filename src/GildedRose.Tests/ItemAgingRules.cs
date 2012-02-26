@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System.Text;
 using ApprovalTests;
 using ApprovalTests.Reporters;
 using NUnit.Framework;
