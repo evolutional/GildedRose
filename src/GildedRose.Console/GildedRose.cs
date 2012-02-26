@@ -52,17 +52,11 @@ namespace GildedRose.Console
 			}
 		}
 
-		private void AgeOneDay(Item item)
+		private static void AgeOneDay(Item item)
 		{
 			if(item.Name != "Aged Brie" && item.Name != "Backstage passes to a TAFKAL80ETC concert")
 			{
-				if(item.Quality > 0)
-				{
-					if(item.Name != "Sulfuras, Hand of Ragnaros")
-					{
-						item.Quality = item.Quality - 1;
-					}
-				}
+				DecrementQuality(item);
 			}
 			else
 			{
@@ -74,18 +68,12 @@ namespace GildedRose.Console
 					{
 						if(item.SellIn < 11)
 						{
-							if(item.Quality < 50)
-							{
-								item.Quality = item.Quality + 1;
-							}
+							IncrementQuality(item);
 						}
 
 						if(item.SellIn < 6)
 						{
-							if(item.Quality < 50)
-							{
-								item.Quality = item.Quality + 1;
-							}
+							IncrementQuality(item);
 						}
 					}
 				}
@@ -102,13 +90,7 @@ namespace GildedRose.Console
 				{
 					if(item.Name != "Backstage passes to a TAFKAL80ETC concert")
 					{
-						if(item.Quality > 0)
-						{
-							if(item.Name != "Sulfuras, Hand of Ragnaros")
-							{
-								item.Quality = item.Quality - 1;
-							}
-						}
+						DecrementQuality(item);
 					}
 					else
 					{
@@ -117,10 +99,26 @@ namespace GildedRose.Console
 				}
 				else
 				{
-					if(item.Quality < 50)
-					{
-						item.Quality = item.Quality + 1;
-					}
+					IncrementQuality(item);
+				}
+			}
+		}
+
+		private static void IncrementQuality(Item item)
+		{
+			if(item.Quality < 50)
+			{
+				item.Quality = item.Quality + 1;
+			}
+		}
+
+		private static void DecrementQuality(Item item)
+		{
+			if(item.Quality > 0)
+			{
+				if(item.Name != "Sulfuras, Hand of Ragnaros")
+				{
+					item.Quality = item.Quality - 1;
 				}
 			}
 		}
