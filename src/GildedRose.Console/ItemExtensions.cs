@@ -26,12 +26,18 @@ namespace GildedRose.Console
 
 		public static bool IsTickets(this GildedRose.Item item)
 		{
-			return item.Name == "Backstage passes to a TAFKAL80ETC concert";
+			return item.BaseName() == "Backstage passes to a TAFKAL80ETC concert";
 		}
 
 		public static bool IsCheese(this GildedRose.Item item)
 		{
-			return item.Name == "Aged Brie";
+			return item.BaseName() == "Aged Brie";
+		}
+
+		private static string BaseName(this GildedRose.Item item)
+		{
+			const string conjured = "Conjured ";
+			return item.Name.StartsWith(conjured) ? item.Name.Substring(conjured.Length) : item.Name;
 		}
 
 		private static bool IsLegendary(this GildedRose.Item item)
