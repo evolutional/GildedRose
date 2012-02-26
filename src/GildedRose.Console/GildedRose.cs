@@ -104,7 +104,7 @@ namespace GildedRose.Console
 			}
 		}
 
-		private static void IncrementQuality(Item item)
+		public static void IncrementQuality(Item item)
 		{
 			if(item.Quality < 50)
 			{
@@ -112,7 +112,7 @@ namespace GildedRose.Console
 			}
 		}
 
-		private static void DecrementQuality(Item item)
+		public static void DecrementQuality(Item item)
 		{
 			if(item.Quality > 0)
 			{
