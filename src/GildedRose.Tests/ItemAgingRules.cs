@@ -1,8 +1,9 @@
 using System.Collections.Generic;
+using System.Linq;
 using ApprovalTests;
 using ApprovalTests.Reporters;
+using FluentAssertions;
 using NUnit.Framework;
-using System.Linq;
 
 namespace GildedRose.Tests
 {
@@ -14,13 +15,21 @@ namespace GildedRose.Tests
 		{
 			var trace = new List<string>();
 			var testSubject = new Console.GildedRose();
-			for (var i = 0; i < 50; ++i)
+			for(int i = 0; i < 50; ++i)
 			{
 				trace.Add(FormatInventory(testSubject));
 				testSubject.UpdateQuality();
 			}
 			trace.Add(FormatInventory(testSubject));
 			Approvals.VerifyAll(trace, string.Empty);
+		}
+
+		[Test]
+		public void ConjuredCheesShouldRotFaster()
+		{
+			var magicCheese = new Console.GildedRose.Item {Name = "Conjured Aged Brie", Quality = 30, SellIn = 3};
+			Console.GildedRose.AgeOneDay(magicCheese);
+			magicCheese.ShouldHave().SharedProperties().EqualTo(new { Quality = 32, SellIn = 2 });
 		}
 
 		private string FormatInventory(Console.GildedRose testSubject)

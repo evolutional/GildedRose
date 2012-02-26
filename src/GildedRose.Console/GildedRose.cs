@@ -52,43 +52,40 @@ namespace GildedRose.Console
 			}
 		}
 
-		private static void AgeOneDay(Item item)
+		public static void AgeOneDay(Item item)
 		{
-			if(item.Name != "Aged Brie" && item.Name != "Backstage passes to a TAFKAL80ETC concert")
+			string baseName = item.Name.StartsWith("Conjured ") ? item.Name.Substring("Conjured ".Length) : item.Name;
+			if(baseName != "Aged Brie" && baseName != "Backstage passes to a TAFKAL80ETC concert")
 			{
 				DecrementQuality(item);
 			}
 			else
 			{
-				if(item.Quality < 50)
+				IncrementQuality(item);
+				if(baseName == "Backstage passes to a TAFKAL80ETC concert")
 				{
-					item.Quality = item.Quality + 1;
-
-					if(item.Name == "Backstage passes to a TAFKAL80ETC concert")
+					if(item.SellIn < 11)
 					{
-						if(item.SellIn < 11)
-						{
-							IncrementQuality(item);
-						}
+						IncrementQuality(item);
+					}
 
-						if(item.SellIn < 6)
-						{
-							IncrementQuality(item);
-						}
+					if(item.SellIn < 6)
+					{
+						IncrementQuality(item);
 					}
 				}
 			}
 
-			if(item.Name != "Sulfuras, Hand of Ragnaros")
+			if(baseName != "Sulfuras, Hand of Ragnaros")
 			{
 				item.SellIn = item.SellIn - 1;
 			}
 
 			if(item.SellIn < 0)
 			{
-				if(item.Name != "Aged Brie")
+				if(baseName != "Aged Brie")
 				{
-					if(item.Name != "Backstage passes to a TAFKAL80ETC concert")
+					if(baseName != "Backstage passes to a TAFKAL80ETC concert")
 					{
 						DecrementQuality(item);
 					}
@@ -107,7 +104,7 @@ namespace GildedRose.Console
 		public static void IncrementQuality(Item item)
 		{
 			IncrementQualityImpl(item);
-			if (item.Name.StartsWith("Conjured ")) IncrementQualityImpl(item);
+			if(item.Name.StartsWith("Conjured ")) IncrementQualityImpl(item);
 		}
 
 		public static void DecrementQuality(Item item)
@@ -135,8 +132,6 @@ namespace GildedRose.Console
 			}
 		}
 
-		public IEnumerable<Item> Items
-		{
-			get { return _innventory; } }
+		public IEnumerable<Item> Items { get { return _innventory; } }
 	}
 }
