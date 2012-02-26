@@ -9,23 +9,9 @@ using NUnit.Framework;
 
 namespace GildedRose.Tests
 {
-	[TestFixture, UseReporter(typeof(QuietReporter))]
+	[TestFixture]
 	public class ItemAgingRules
 	{
-		[Test]
-		public void LegacyShouldContinueToBehaveAsItAlwaysDid()
-		{
-			var testSubject = new Console.GildedRose();
-			var trace = new StringBuilder();
-			for(int i = 0; i < 50; ++i)
-			{
-				trace.AppendLine(DisplayInventory(testSubject.InventoryTestAccess));
-				testSubject.UpdateQuality();
-			}
-			trace.AppendLine(DisplayInventory(testSubject.InventoryTestAccess));
-			Approvals.Verify(trace.ToString());
-		}
-
 		[Test]
 		public void ItemShouldExpireWhenSellInIsNegative()
 		{
