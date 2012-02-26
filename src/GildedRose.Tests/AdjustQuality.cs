@@ -17,6 +17,7 @@ namespace GildedRose.Tests
 		public object[][] DecrementQualityData = new[]
 			{
 				new object[] {30, 29, false},
+				new object[] {30, 28, true},
 				new object[] {0, 0, false},
 			};
 

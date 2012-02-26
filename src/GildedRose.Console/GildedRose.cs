@@ -118,7 +118,7 @@ namespace GildedRose.Console
 			{
 				if(item.Name != "Sulfuras, Hand of Ragnaros")
 				{
-					item.Quality = item.Quality - 1;
+					item.Quality = item.Quality - (item.Name.StartsWith("Conjured ") ? 2 : 1);
 				}
 			}
 		}

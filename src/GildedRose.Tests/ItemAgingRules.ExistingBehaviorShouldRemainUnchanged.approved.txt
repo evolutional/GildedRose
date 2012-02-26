@@ -12,7 +12,7 @@ q=1, sell=1: Aged Brie
 q=6, sell=4: Elixir of the Mongoose
 q=80, sell=0: Sulfuras, Hand of Ragnaros
 q=21, sell=14: Backstage passes to a TAFKAL80ETC concert
-q=5, sell=2: Conjured Mana Cake
+q=4, sell=2: Conjured Mana Cake
 
 [2] = 
 q=18, sell=8: +5 Dexterity Vest
@@ -20,7 +20,7 @@ q=2, sell=0: Aged Brie
 q=5, sell=3: Elixir of the Mongoose
 q=80, sell=0: Sulfuras, Hand of Ragnaros
 q=22, sell=13: Backstage passes to a TAFKAL80ETC concert
-q=4, sell=1: Conjured Mana Cake
+q=2, sell=1: Conjured Mana Cake
 
 [3] = 
 q=17, sell=7: +5 Dexterity Vest
@@ -28,7 +28,7 @@ q=4, sell=-1: Aged Brie
 q=4, sell=2: Elixir of the Mongoose
 q=80, sell=0: Sulfuras, Hand of Ragnaros
 q=23, sell=12: Backstage passes to a TAFKAL80ETC concert
-q=3, sell=0: Conjured Mana Cake
+q=0, sell=0: Conjured Mana Cake
 
 [4] = 
 q=16, sell=6: +5 Dexterity Vest
@@ -36,7 +36,7 @@ q=6, sell=-2: Aged Brie
 q=3, sell=1: Elixir of the Mongoose
 q=80, sell=0: Sulfuras, Hand of Ragnaros
 q=24, sell=11: Backstage passes to a TAFKAL80ETC concert
-q=1, sell=-1: Conjured Mana Cake
+q=0, sell=-1: Conjured Mana Cake
 
 [5] = 
 q=15, sell=5: +5 Dexterity Vest
