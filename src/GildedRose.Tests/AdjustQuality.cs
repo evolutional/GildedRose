@@ -16,35 +16,35 @@ namespace GildedRose.Tests
 
 		public object[][] DecrementQualityData = new[]
 			{
-				new object[] {30, 29},
-				new object[] {0, 0},
+				new object[] {30, 29, false},
+				new object[] {0, 0, false},
 			};
 
 		[Test, TestCaseSource("DecrementQualityData")]
-		public void DecrementingNormalItemShouldReduceQualityByOne(int initialQuality, int finalQuality)
+		public void DecrementingNormalItemShouldReduceQualityByOne(int initialQuality, int finalQuality, bool isConjured)
 		{
-			var data = ItemWithQuality(initialQuality);
+			var data = ItemWithQuality(initialQuality, isConjured);
 			Console.GildedRose.DecrementQuality(data);
 			data.Quality.Should().Be(finalQuality);
 		}
 
 		public object[][] IncrementQualityData = new[]
 			{
-				new object[] {30, 31},
-				new object[] {50, 50},
+				new object[] {30, 31, false},
+				new object[] {50, 50, false},
 			};
 
 		[Test, TestCaseSource("IncrementQualityData")]
-		public void IncrementingNormalItemShouldIncreaseQualityByOne(int initialQuality, int finalQuality)
+		public void IncrementingNormalItemShouldIncreaseQualityByOne(int initialQuality, int finalQuality, bool isConjured)
 		{
-			var data = ItemWithQuality(initialQuality);
+			var data = ItemWithQuality(initialQuality, isConjured);
 			Console.GildedRose.IncrementQuality(data);
 			data.Quality.Should().Be(finalQuality);
 		}
 
-		private static Console.GildedRose.Item ItemWithQuality(int quality)
+		private static Console.GildedRose.Item ItemWithQuality(int quality, bool isConjured)
 		{
-			return new Console.GildedRose.Item { Name = "Arbitrary item", Quality = quality };
+			return new Console.GildedRose.Item { Name = isConjured ? "Conjured something or other" : "Arbitrary item", Quality = quality };
 		}
 	}
 }
