@@ -25,11 +25,24 @@ namespace GildedRose.Tests
 		}
 
 		[Test]
-		public void ConjuredCheesShouldRotFaster()
+		public void ConjuredCheeseShouldRotFaster()
 		{
 			var magicCheese = new Console.GildedRose.Item {Name = "Conjured Aged Brie", Quality = 30, SellIn = 3};
 			Console.GildedRose.AgeOneDay(magicCheese);
-			magicCheese.ShouldHave().SharedProperties().EqualTo(new { Quality = 32, SellIn = 2 });
+			magicCheese.ShouldHave().SharedProperties().EqualTo(new {Quality = 32, SellIn = 2});
+		}
+
+		[Test]
+		public void ConjuredTicketsShouldGetBetterFaster()
+		{
+			var magicCheese = new Console.GildedRose.Item
+				{
+					Name = "Conjured Backstage passes to a TAFKAL80ETC concert",
+					Quality = 30,
+					SellIn = 3
+				};
+			Console.GildedRose.AgeOneDay(magicCheese);
+			magicCheese.ShouldHave().SharedProperties().EqualTo(new {Quality = 36, SellIn = 2});
 		}
 
 		private string FormatInventory(Console.GildedRose testSubject)
