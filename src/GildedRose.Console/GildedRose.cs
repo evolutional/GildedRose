@@ -65,7 +65,7 @@ namespace GildedRose.Console
 			}
 		}
 
-		private static void UpdateQualityForFreshItem(Item item)
+		public static Item UpdateQualityForFreshItem(Item item)
 		{
 			if(item.IsCheese())
 			{
@@ -80,9 +80,10 @@ namespace GildedRose.Console
 			{
 				item.AdjustQuality(-1);
 			}
+			return item;
 		}
 
-		private static void UpdateQualityForExpiredItem(Item item)
+		public static Item UpdateQualityForExpiredItem(Item item)
 		{
 			if(item.IsCheese())
 			{
@@ -96,6 +97,7 @@ namespace GildedRose.Console
 			{
 				item.AdjustQuality(-2);
 			}
+			return item;
 		}
 
 		public IEnumerable<Item> InventoryTestAccess { get { return _innventory; } }

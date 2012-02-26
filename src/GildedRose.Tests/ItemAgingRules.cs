@@ -38,22 +38,6 @@ namespace GildedRose.Tests
 			new Console.GildedRose.Item {SellIn = 0}.IsExpired().Should().BeFalse();
 		}
 
-		[Test]
-		public void ItemQualityShouldAlwaysRemainWithinAllowedMax()
-		{
-			var testSubject = new Console.GildedRose.Item {Quality = 3};
-			testSubject.AdjustQuality(90);
-			testSubject.Quality.Should().Be(50);
-		}
-
-		[Test]
-		public void ItemQualityShouldAlwaysRemainWithinAllowedMin()
-		{
-			var testSubject = new Console.GildedRose.Item {Quality = 3};
-			testSubject.AdjustQuality(-90);
-			testSubject.Quality.Should().Be(0);
-		}
-
 		private string DisplayInventory(IEnumerable<Console.GildedRose.Item> inventory)
 		{
 			return string.Join("\r\n",inventory.Select(DisplayItem)) + "\r\n";

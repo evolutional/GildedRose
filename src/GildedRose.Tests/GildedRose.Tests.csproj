@@ -57,6 +57,7 @@
     <Compile Include="LegendaryItemsAreUnchanging.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ItemAgingRules.cs" />
+    <Compile Include="UpdatingQuality.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GildedRose.Console\GildedRose.Console.csproj">
