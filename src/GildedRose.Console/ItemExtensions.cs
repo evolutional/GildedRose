@@ -4,10 +4,12 @@ namespace GildedRose.Console
 {
 	public static class ItemExtensions
 	{
+		private const string _conjured = "Conjured ";
+
 		public static void AdjustQuality(this GildedRose.Item item, int amount)
 		{
 			if (IsLegendary(item)) return;
-			item.Quality = ComputeNewQuality(item.Quality, amount);
+			item.Quality = ComputeNewQuality(item.Quality, amount * (item.IsConjured() ? 2 : 1));
 		}
 
 		public static void SetQualityToZero(this GildedRose.Item item)
@@ -36,8 +38,13 @@ namespace GildedRose.Console
 
 		private static string BaseName(this GildedRose.Item item)
 		{
-			const string conjured = "Conjured ";
-			return item.Name.StartsWith(conjured) ? item.Name.Substring(conjured.Length) : item.Name;
+			return item.IsConjured() ? item.Name.Substring(_conjured.Length) : item.Name;
+		}
+
+		private static bool IsConjured(this GildedRose.Item item)
+		{
+			if (string.IsNullOrEmpty(item.Name)) return false;
+			return item.Name.StartsWith(_conjured);
 		}
 
 		private static bool IsLegendary(this GildedRose.Item item)

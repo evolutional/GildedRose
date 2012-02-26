@@ -9,7 +9,9 @@ namespace GildedRose.Tests
 	{
 		public const string TicketsName = "Backstage passes to a TAFKAL80ETC concert";
 		private static readonly Console.GildedRose.Item _cheese = _Make("Aged Brie");
+		private static readonly Console.GildedRose.Item _conjuredCheese = _Make("Conjured Aged Brie");
 		private static readonly Console.GildedRose.Item _normalItem = _Make("Some random BS item");
+		private static readonly Console.GildedRose.Item _conjuredItem = _Make("Conjured Some random BS item");
 		private static readonly Console.GildedRose.Item _uncommonTickets = _Make(TicketsName, 8);
 		private static readonly Console.GildedRose.Item _tickets = _Make(TicketsName, 15);
 		private static readonly Console.GildedRose.Item _rareTickets = _Make(TicketsName, 1);
@@ -53,6 +55,8 @@ namespace GildedRose.Tests
 				new object[] {"rare tickets", _rareTickets, 3, -25},
 				new object[] {"cheese", _cheese, 1, 2},
 				new object[] {"normal item", _normalItem, -1, -2},
+				new object[] {"conjured cheese", _conjuredCheese, 2, 4},
+				new object[] {"conjured item", _conjuredItem, -2, -4},
 			};
 
 		public static Console.GildedRose.Item _Make(string name, int sellIn = 0)
