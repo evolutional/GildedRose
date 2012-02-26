@@ -30,6 +30,22 @@ namespace GildedRose.Tests
 			data.Quality.Should().Be(0);
 		}
 
+		[Test]
+		public void IncrementingNormalItemShouldIncreaseQualityByOne()
+		{
+			var data = ItemWithQuality(30);
+			Console.GildedRose.IncrementQuality(data);
+			data.Quality.Should().Be(31);
+		}
+
+		[Test]
+		public void IncrementingNormalItemShouldNeverImproveQualityAboveFifty()
+		{
+			var data = ItemWithQuality(50);
+			Console.GildedRose.IncrementQuality(data);
+			data.Quality.Should().Be(50);
+		}
+
 		private static Console.GildedRose.Item ItemWithQuality(int quality)
 		{
 			return new Console.GildedRose.Item { Name = "Arbitrary item", Quality = quality };
