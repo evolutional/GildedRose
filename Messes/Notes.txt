@@ -4,6 +4,8 @@
 •	Operating by Side Effect.
 •	Operating by Coincidence.
 * Rampant duplication.
+* Many Responsibilities.
+* Using switch statements or gotos.
 
 
 •	Getter-free coding
@@ -11,3 +13,4 @@
 •	Set-based algorithms: order-independent and count-independent
 •	Whole Value pattern (you might actually use this one)
 •	Pure, Side-effect free, and immutable (you would use this one if the language made it easier)
+* Classes are operations; methods are results; noun classes are only facades.
