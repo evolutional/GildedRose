@@ -6,6 +6,7 @@
 * Rampant duplication.
 * Many Responsibilities.
 * Using switch statements or gotos.
+* Lack of abstraction.
 
 
 •	Getter-free coding
@@ -14,3 +15,8 @@
 •	Whole Value pattern (you might actually use this one)
 •	Pure, Side-effect free, and immutable (you would use this one if the language made it easier)
 * Classes are operations; methods are results; noun classes are only facades.
+
+
+DbConnectionOptions.GetKeyValuePair() => switches, all low-level code (lack of abstraction)
+DataTable => huge! Many responsibilities.
+ArgumentParser.Parse => duplication. NIHS.
