@@ -44,76 +44,90 @@ namespace GildedRose.Console
 	{
 		public void UpdateQuality()
 		{
-			for(int i = 0; i < _innventory.Count; i++)
+			foreach (var item in this._innventory)
 			{
-				if(_innventory[i].Name != "Aged Brie" && _innventory[i].Name != "Backstage passes to a TAFKAL80ETC concert")
+				AgeOneDay(item);
+			}
+		}
+
+		public static void AgeOneDay(Item item)
+		{
+			if (item.Name != "Aged Brie" && item.Name != "Backstage passes to a TAFKAL80ETC concert")
+			{
+				DecrementQuality(item);
+			}
+			else
+			{
+				IncrementQuality(item);
+				if (item.IsTickets())
 				{
-					if(_innventory[i].Quality > 0)
+					if (item.SellIn < 11)
 					{
-						if(_innventory[i].Name != "Sulfuras, Hand of Ragnaros")
-						{
-							_innventory[i].Quality = _innventory[i].Quality - 1;
-						}
+						IncrementQuality(item);
+					}
+
+					if (item.SellIn < 6)
+					{
+						IncrementQuality(item);
+					}
+				}
+			}
+
+			if (!IsLegendary(item))
+			{
+				item.SellIn = item.SellIn - 1;
+			}
+
+			if (item.SellIn < 0)
+			{
+				if (!IsCheese(item))
+				{
+					if (item.Name != "Backstage passes to a TAFKAL80ETC concert")
+					{
+						DecrementQuality(item);
+					}
+					else
+					{
+						SetQualityToZero(item);
 					}
 				}
 				else
 				{
-					if(_innventory[i].Quality < 50)
-					{
-						_innventory[i].Quality = _innventory[i].Quality + 1;
-
-						if(_innventory[i].Name == "Backstage passes to a TAFKAL80ETC concert")
-						{
-							if(_innventory[i].SellIn < 11)
-							{
-								if(_innventory[i].Quality < 50)
-								{
-									_innventory[i].Quality = _innventory[i].Quality + 1;
-								}
-							}
-
-							if(_innventory[i].SellIn < 6)
-							{
-								if(_innventory[i].Quality < 50)
-								{
-									_innventory[i].Quality = _innventory[i].Quality + 1;
-								}
-							}
-						}
-					}
+					IncrementQuality(item);
 				}
+			}
+		}
 
-				if(_innventory[i].Name != "Sulfuras, Hand of Ragnaros")
-				{
-					_innventory[i].SellIn = _innventory[i].SellIn - 1;
-				}
+		private static bool IsCheese(Item item)
+		{
+			return item.Name == "Aged Brie";
+		}
 
-				if(_innventory[i].SellIn < 0)
+		private static bool IsLegendary(Item item)
+		{
+			return item.Name == "Sulfuras, Hand of Ragnaros";
+		}
+
+		private static void SetQualityToZero(Item item)
+		{
+			item.Quality = 0;
+		}
+
+		private static void IncrementQuality(Item item)
+		{
+			if (item.Quality < 50)
+			{
+				item.Quality = item.Quality + 1;
+			}
+		}
+
+		private static void DecrementQuality(Item item)
+		{
+			if (item.Quality > 0)
+			{
+				if (item.Name != "Sulfuras, Hand of Ragnaros")
 				{
-					if(_innventory[i].Name != "Aged Brie")
-					{
-						if(_innventory[i].Name != "Backstage passes to a TAFKAL80ETC concert")
-						{
-							if(_innventory[i].Quality > 0)
-							{
-								if(_innventory[i].Name != "Sulfuras, Hand of Ragnaros")
-								{
-									_innventory[i].Quality = _innventory[i].Quality - 1;
-								}
-							}
-						}
-						else
-						{
-							_innventory[i].Quality = _innventory[i].Quality - _innventory[i].Quality;
-						}
-					}
-					else
-					{
-						if(_innventory[i].Quality < 50)
-						{
-							_innventory[i].Quality = _innventory[i].Quality + 1;
-						}
-					}
+					item.Quality = item.Quality - 1;
 				}
 			}
 		}
