@@ -3,6 +3,7 @@
 •	Primitive Obsession.
 •	Operating by Side Effect.
 •	Operating by Coincidence.
+* Rampant duplication.
 
 
 •	Getter-free coding
