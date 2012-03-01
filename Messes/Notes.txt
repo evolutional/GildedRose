@@ -1,0 +1,12 @@
+
+
+•	Primitive Obsession.
+•	Operating by Side Effect.
+•	Operating by Coincidence.
+
+
+•	Getter-free coding
+•	TDD as if you mean it
+•	Set-based algorithms: order-independent and count-independent
+•	Whole Value pattern (you might actually use this one)
+•	Pure, Side-effect free, and immutable (you would use this one if the language made it easier)

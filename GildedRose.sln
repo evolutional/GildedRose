@@ -11,6 +11,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{38E3A8
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Messes", "Messes", "{EDB45482-366C-4A94-9B0C-769E8BDB7466}"
+	ProjectSection(SolutionItems) = preProject
+		Messes\ArgumentParser.cs = Messes\ArgumentParser.cs
+		Messes\DataTable.cs = Messes\DataTable.cs
+		Messes\DbConnectionOptions.cs = Messes\DbConnectionOptions.cs
+		Messes\DbConnectionStringBuilder.cs = Messes\DbConnectionStringBuilder.cs
+		Messes\GenerateDynamicTests.cs = Messes\GenerateDynamicTests.cs
+		Messes\Notes.txt = Messes\Notes.txt
+		Messes\UICommon.cs = Messes\UICommon.cs
+		Messes\UIFileDownloader.cs = Messes\UIFileDownloader.cs
+		Messes\UIFileUploader.cs = Messes\UIFileUploader.cs
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
