@@ -98,6 +98,25 @@
 
 <p>Finally, there are some office politics going on. There is a set of code that you can't change (to see why, read the code comments). If you change even a single character of the file HereBeDragons.cs, then you will be fired.</p>
 
+<h2>Sample Solutions</h2>
+
+<p>In each of these sample solutions I attempted to commit each separate thought or move as a seperate change. I also put in long commit messages. My intent is that you can read my git history to see what I was thinking each step on the way.</p>
+
+<dl>
+<dt>Empty starting point</dt>
+<dd>
+The <a href="https://github.com/arlobelshee/GildedRose">master</a> branch contains an empty starting point. I have hooked up a few testing libs that I find useful on legacy code.
+</dd>
+<dt>Whole hog refactoring, procedural style</dt>
+<dd>
+In <a href="https://github.com/arlobelshee/GildedRose/commits/arlo_procedural_refactor_first">arlo_procedural_refactor_first</a>, I followed my nose but did a whole lot of refactoring before adding the new feature. The result is a highly testable implementation. However, it took a while to do and resulted in many changes to the code. This is not necessarily optimal when working with legacy. I did, at least, stop myself before refactoring this into some OO monster. It doesn't need to go OO in order to handle current needs (in fact, OO makes some things more complicated). So I kept it procedural&mdash;just high-quality procedural. This is a pretty good example of listening to the code and letting it lead me to a pretty good design.
+</dd>
+<dt>Restraining myself</dt>
+<dd>
+With <a href="https://github.com/arlobelshee/GildedRose/commits/arlo_quick_in_and_out">arlo_quick_in_and_out</a> I was attempting to work like I would on a legacy code save project. I need to minimize my time spent on this one improvement, because I need to make small improvements all over the code base. I don't want to invest too deeply in one area. I would rather get to know the whole system and make it all a little more malleable. That will enable the bigger changes that are likely coming. Also this reduces the chance of introducing new bugs. So this attempt tries to make the code just a little more testable (and tested), implement the new requirement, and then move on without spending too much time. It was marginally successful; I could made a few more refactorings than I should have before implementing the new feature.
+</dd>
+</dl>
+
       <h2>License</h2>
       <p>MIT</p>
     
