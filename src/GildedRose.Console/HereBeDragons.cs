@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace GildedRose.Console
+namespace ConsoleApp
 {
 	public partial class GildedRose
 	{

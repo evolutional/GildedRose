@@ -1,14 +1,16 @@
-namespace GildedRose.Console
+using System;
+
+namespace ConsoleApp
 {
 	public class Program
 	{
 		public static void Main(string[] args)
 		{
-			System.Console.WriteLine("OMGHAI!");
+			Console.WriteLine("OMGHAI!");
 
 			var app = new GildedRose();
 			app.UpdateQuality();
-			System.Console.ReadKey();
+			Console.ReadKey();
 		}
 	}
 }

@@ -1,6 +1,6 @@
 using NUnit.Framework;
 
-namespace GildedRose.Tests
+namespace ConsoleApp.Tests
 {
 	[TestFixture]
 	public class ItemAgingRules

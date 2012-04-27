@@ -8,7 +8,7 @@
     <ProjectGuid>{F928CC23-1B56-46FD-B1F2-FEE28F2B424C}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GildedRose.Console</RootNamespace>
+    <RootNamespace>ConsoleApp</RootNamespace>
     <AssemblyName>GildedRose.Console</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
