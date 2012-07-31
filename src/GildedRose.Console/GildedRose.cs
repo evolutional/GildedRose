@@ -38,6 +38,8 @@
 
  * */
 
+using System.Text;
+
 namespace ConsoleApp
 {
 	public partial class GildedRose
@@ -115,6 +117,15 @@ namespace ConsoleApp
 						}
 					}
 				}
+			}
+		}
+
+		public void DumpDebugInfo(StringBuilder log)
+		{
+			foreach(var item in _innventory)
+			{
+				log.AppendFormat("[{1}, {2}] {0} should sell in {2} and has quality {1}.", item.Name, item.Quality, item.SellIn);
+				log.AppendLine();
 			}
 		}
 	}

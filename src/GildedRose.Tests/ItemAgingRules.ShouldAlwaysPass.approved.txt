@@ -1,0 +1,357 @@
+After Iteration 0[20, 10] +5 Dexterity Vest should sell in 10 and has quality 20.
+[0, 2] Aged Brie should sell in 2 and has quality 0.
+[7, 5] Elixir of the Mongoose should sell in 5 and has quality 7.
+[80, 0] Sulfuras, Hand of Ragnaros should sell in 0 and has quality 80.
+[20, 15] Backstage passes to a TAFKAL80ETC concert should sell in 15 and has quality 20.
+[6, 3] Conjured Mana Cake should sell in 3 and has quality 6.
+
+After Iteration 1[19, 9] +5 Dexterity Vest should sell in 9 and has quality 19.
+[1, 1] Aged Brie should sell in 1 and has quality 1.
+[6, 4] Elixir of the Mongoose should sell in 4 and has quality 6.
+[80, 0] Sulfuras, Hand of Ragnaros should sell in 0 and has quality 80.
+[21, 14] Backstage passes to a TAFKAL80ETC concert should sell in 14 and has quality 21.
+[5, 2] Conjured Mana Cake should sell in 2 and has quality 5.
+
+After Iteration 2[18, 8] +5 Dexterity Vest should sell in 8 and has quality 18.
+[2, 0] Aged Brie should sell in 0 and has quality 2.
+[5, 3] Elixir of the Mongoose should sell in 3 and has quality 5.
+[80, 0] Sulfuras, Hand of Ragnaros should sell in 0 and has quality 80.
+[22, 13] Backstage passes to a TAFKAL80ETC concert should sell in 13 and has quality 22.
+[4, 1] Conjured Mana Cake should sell in 1 and has quality 4.
+
+After Iteration 3[17, 7] +5 Dexterity Vest should sell in 7 and has quality 17.
+[4, -1] Aged Brie should sell in -1 and has quality 4.
+[4, 2] Elixir of the Mongoose should sell in 2 and has quality 4.
+[80, 0] Sulfuras, Hand of Ragnaros should sell in 0 and has quality 80.
+[23, 12] Backstage passes to a TAFKAL80ETC concert should sell in 12 and has quality 23.
+[3, 0] Conjured Mana Cake should sell in 0 and has quality 3.
+
+After Iteration 4[16, 6] +5 Dexterity Vest should sell in 6 and has quality 16.
+[6, -2] Aged Brie should sell in -2 and has quality 6.
+[3, 1] Elixir of the Mongoose should sell in 1 and has quality 3.
+[80, 0] Sulfuras, Hand of Ragnaros should sell in 0 and has quality 80.
+[24, 11] Backstage passes to a TAFKAL80ETC concert should sell in 11 and has quality 24.
+[1, -1] Conjured Mana Cake should sell in -1 and has quality 1.
+
+After Iteration 5[15, 5] +5 Dexterity Vest should sell in 5 and has quality 15.
+[8, -3] Aged Brie should sell in -3 and has quality 8.
+[2, 0] Elixir of the Mongoose should sell in 0 and has quality 2.
+[80, 0] Sulfuras, Hand of Ragnaros should sell in 0 and has quality 80.
+[25, 10] Backstage passes to a TAFKAL80ETC concert should sell in 10 and has quality 25.
+[0, -2] Conjured Mana Cake should sell in -2 and has quality 0.
+
+After Iteration 6[14, 4] +5 Dexterity Vest should sell in 4 and has quality 14.
+[10, -4] Aged Brie should sell in -4 and has quality 10.
+[0, -1] Elixir of the Mongoose should sell in -1 and has quality 0.
+[80, 0] Sulfuras, Hand of Ragnaros should sell in 0 and has quality 80.
+[27, 9] Backstage passes to a TAFKAL80ETC concert should sell in 9 and has quality 27.
+[0, -3] Conjured Mana Cake should sell in -3 and has quality 0.
+
+After Iteration 7[13, 3] +5 Dexterity Vest should sell in 3 and has quality 13.
+[12, -5] Aged Brie should sell in -5 and has quality 12.
+[0, -2] Elixir of the Mongoose should sell in -2 and has quality 0.
+[80, 0] Sulfuras, Hand of Ragnaros should sell in 0 and has quality 80.
+[29, 8] Backstage passes to a TAFKAL80ETC concert should sell in 8 and has quality 29.
+[0, -4] Conjured Mana Cake should sell in -4 and has quality 0.
+
+After Iteration 8[12, 2] +5 Dexterity Vest should sell in 2 and has quality 12.
+[14, -6] Aged Brie should sell in -6 and has quality 14.
+[0, -3] Elixir of the Mongoose should sell in -3 and has quality 0.
+[80, 0] Sulfuras, Hand of Ragnaros should sell in 0 and has quality 80.
+[31, 7] Backstage passes to a TAFKAL80ETC concert should sell in 7 and has quality 31.
+[0, -5] Conjured Mana Cake should sell in -5 and has quality 0.
+
+After Iteration 9[11, 1] +5 Dexterity Vest should sell in 1 and has quality 11.
+[16, -7] Aged Brie should sell in -7 and has quality 16.
+[0, -4] Elixir of the Mongoose should sell in -4 and has quality 0.
+[80, 0] Sulfuras, Hand of Ragnaros should sell in 0 and has quality 80.
+[33, 6] Backstage passes to a TAFKAL80ETC concert should sell in 6 and has quality 33.
+[0, -6] Conjured Mana Cake should sell in -6 and has quality 0.
+
+After Iteration 10[10, 0] +5 Dexterity Vest should sell in 0 and has quality 10.
+[18, -8] Aged Brie should sell in -8 and has quality 18.
+[0, -5] Elixir of the Mongoose should sell in -5 and has quality 0.
+[80, 0] Sulfuras, Hand of Ragnaros should sell in 0 and has quality 80.
+[35, 5] Backstage passes to a TAFKAL80ETC concert should sell in 5 and has quality 35.
+[0, -7] Conjured Mana Cake should sell in -7 and has quality 0.
+
+After Iteration 11[8, -1] +5 Dexterity Vest should sell in -1 and has quality 8.
+[20, -9] Aged Brie should sell in -9 and has quality 20.
+[0, -6] Elixir of the Mongoose should sell in -6 and has quality 0.
+[80, 0] Sulfuras, Hand of Ragnaros should sell in 0 and has quality 80.
+[38, 4] Backstage passes to a TAFKAL80ETC concert should sell in 4 and has quality 38.
+[0, -8] Conjured Mana Cake should sell in -8 and has quality 0.
+
+After Iteration 12[6, -2] +5 Dexterity Vest should sell in -2 and has quality 6.
+[22, -10] Aged Brie should sell in -10 and has quality 22.
+[0, -7] Elixir of the Mongoose should sell in -7 and has quality 0.
+[80, 0] Sulfuras, Hand of Ragnaros should sell in 0 and has quality 80.
+[41, 3] Backstage passes to a TAFKAL80ETC concert should sell in 3 and has quality 41.
+[0, -9] Conjured Mana Cake should sell in -9 and has quality 0.
+
+After Iteration 13[4, -3] +5 Dexterity Vest should sell in -3 and has quality 4.
+[24, -11] Aged Brie should sell in -11 and has quality 24.
+[0, -8] Elixir of the Mongoose should sell in -8 and has quality 0.
+[80, 0] Sulfuras, Hand of Ragnaros should sell in 0 and has quality 80.
+[44, 2] Backstage passes to a TAFKAL80ETC concert should sell in 2 and has quality 44.
+[0, -10] Conjured Mana Cake should sell in -10 and has quality 0.
+
+After Iteration 14[2, -4] +5 Dexterity Vest should sell in -4 and has quality 2.
+[26, -12] Aged Brie should sell in -12 and has quality 26.
+[0, -9] Elixir of the Mongoose should sell in -9 and has quality 0.
+[80, 0] Sulfuras, Hand of Ragnaros should sell in 0 and has quality 80.
+[47, 1] Backstage passes to a TAFKAL80ETC concert should sell in 1 and has quality 47.
+[0, -11] Conjured Mana Cake should sell in -11 and has quality 0.
+
+After Iteration 15[0, -5] +5 Dexterity Vest should sell in -5 and has quality 0.
+[28, -13] Aged Brie should sell in -13 and has quality 28.
+[0, -10] Elixir of the Mongoose should sell in -10 and has quality 0.
+[80, 0] Sulfuras, Hand of Ragnaros should sell in 0 and has quality 80.
+[50, 0] Backstage passes to a TAFKAL80ETC concert should sell in 0 and has quality 50.
+[0, -12] Conjured Mana Cake should sell in -12 and has quality 0.
+
+After Iteration 16[0, -6] +5 Dexterity Vest should sell in -6 and has quality 0.
+[30, -14] Aged Brie should sell in -14 and has quality 30.
+[0, -11] Elixir of the Mongoose should sell in -11 and has quality 0.
+[80, 0] Sulfuras, Hand of Ragnaros should sell in 0 and has quality 80.
+[0, -1] Backstage passes to a TAFKAL80ETC concert should sell in -1 and has quality 0.
+[0, -13] Conjured Mana Cake should sell in -13 and has quality 0.
+
+After Iteration 17[0, -7] +5 Dexterity Vest should sell in -7 and has quality 0.
+[32, -15] Aged Brie should sell in -15 and has quality 32.
+[0, -12] Elixir of the Mongoose should sell in -12 and has quality 0.
+[80, 0] Sulfuras, Hand of Ragnaros should sell in 0 and has quality 80.
+[0, -2] Backstage passes to a TAFKAL80ETC concert should sell in -2 and has quality 0.
+[0, -14] Conjured Mana Cake should sell in -14 and has quality 0.
+
+After Iteration 18[0, -8] +5 Dexterity Vest should sell in -8 and has quality 0.
+[34, -16] Aged Brie should sell in -16 and has quality 34.
+[0, -13] Elixir of the Mongoose should sell in -13 and has quality 0.
+[80, 0] Sulfuras, Hand of Ragnaros should sell in 0 and has quality 80.
+[0, -3] Backstage passes to a TAFKAL80ETC concert should sell in -3 and has quality 0.
+[0, -15] Conjured Mana Cake should sell in -15 and has quality 0.
+
+After Iteration 19[0, -9] +5 Dexterity Vest should sell in -9 and has quality 0.
+[36, -17] Aged Brie should sell in -17 and has quality 36.
+[0, -14] Elixir of the Mongoose should sell in -14 and has quality 0.
+[80, 0] Sulfuras, Hand of Ragnaros should sell in 0 and has quality 80.
+[0, -4] Backstage passes to a TAFKAL80ETC concert should sell in -4 and has quality 0.
+[0, -16] Conjured Mana Cake should sell in -16 and has quality 0.
+
+After Iteration 20[0, -10] +5 Dexterity Vest should sell in -10 and has quality 0.
+[38, -18] Aged Brie should sell in -18 and has quality 38.
+[0, -15] Elixir of the Mongoose should sell in -15 and has quality 0.
+[80, 0] Sulfuras, Hand of Ragnaros should sell in 0 and has quality 80.
+[0, -5] Backstage passes to a TAFKAL80ETC concert should sell in -5 and has quality 0.
+[0, -17] Conjured Mana Cake should sell in -17 and has quality 0.
+
+After Iteration 21[0, -11] +5 Dexterity Vest should sell in -11 and has quality 0.
+[40, -19] Aged Brie should sell in -19 and has quality 40.
+[0, -16] Elixir of the Mongoose should sell in -16 and has quality 0.
+[80, 0] Sulfuras, Hand of Ragnaros should sell in 0 and has quality 80.
+[0, -6] Backstage passes to a TAFKAL80ETC concert should sell in -6 and has quality 0.
+[0, -18] Conjured Mana Cake should sell in -18 and has quality 0.
+
+After Iteration 22[0, -12] +5 Dexterity Vest should sell in -12 and has quality 0.
+[42, -20] Aged Brie should sell in -20 and has quality 42.
+[0, -17] Elixir of the Mongoose should sell in -17 and has quality 0.
+[80, 0] Sulfuras, Hand of Ragnaros should sell in 0 and has quality 80.
+[0, -7] Backstage passes to a TAFKAL80ETC concert should sell in -7 and has quality 0.
+[0, -19] Conjured Mana Cake should sell in -19 and has quality 0.
+
+After Iteration 23[0, -13] +5 Dexterity Vest should sell in -13 and has quality 0.
+[44, -21] Aged Brie should sell in -21 and has quality 44.
+[0, -18] Elixir of the Mongoose should sell in -18 and has quality 0.
+[80, 0] Sulfuras, Hand of Ragnaros should sell in 0 and has quality 80.
+[0, -8] Backstage passes to a TAFKAL80ETC concert should sell in -8 and has quality 0.
+[0, -20] Conjured Mana Cake should sell in -20 and has quality 0.
+
+After Iteration 24[0, -14] +5 Dexterity Vest should sell in -14 and has quality 0.
+[46, -22] Aged Brie should sell in -22 and has quality 46.
+[0, -19] Elixir of the Mongoose should sell in -19 and has quality 0.
+[80, 0] Sulfuras, Hand of Ragnaros should sell in 0 and has quality 80.
+[0, -9] Backstage passes to a TAFKAL80ETC concert should sell in -9 and has quality 0.
+[0, -21] Conjured Mana Cake should sell in -21 and has quality 0.
+
+After Iteration 25[0, -15] +5 Dexterity Vest should sell in -15 and has quality 0.
+[48, -23] Aged Brie should sell in -23 and has quality 48.
+[0, -20] Elixir of the Mongoose should sell in -20 and has quality 0.
+[80, 0] Sulfuras, Hand of Ragnaros should sell in 0 and has quality 80.
+[0, -10] Backstage passes to a TAFKAL80ETC concert should sell in -10 and has quality 0.
+[0, -22] Conjured Mana Cake should sell in -22 and has quality 0.
+
+After Iteration 26[0, -16] +5 Dexterity Vest should sell in -16 and has quality 0.
+[50, -24] Aged Brie should sell in -24 and has quality 50.
+[0, -21] Elixir of the Mongoose should sell in -21 and has quality 0.
+[80, 0] Sulfuras, Hand of Ragnaros should sell in 0 and has quality 80.
+[0, -11] Backstage passes to a TAFKAL80ETC concert should sell in -11 and has quality 0.
+[0, -23] Conjured Mana Cake should sell in -23 and has quality 0.
+
+After Iteration 27[0, -17] +5 Dexterity Vest should sell in -17 and has quality 0.
+[50, -25] Aged Brie should sell in -25 and has quality 50.
+[0, -22] Elixir of the Mongoose should sell in -22 and has quality 0.
+[80, 0] Sulfuras, Hand of Ragnaros should sell in 0 and has quality 80.
+[0, -12] Backstage passes to a TAFKAL80ETC concert should sell in -12 and has quality 0.
+[0, -24] Conjured Mana Cake should sell in -24 and has quality 0.
+
+After Iteration 28[0, -18] +5 Dexterity Vest should sell in -18 and has quality 0.
+[50, -26] Aged Brie should sell in -26 and has quality 50.
+[0, -23] Elixir of the Mongoose should sell in -23 and has quality 0.
+[80, 0] Sulfuras, Hand of Ragnaros should sell in 0 and has quality 80.
+[0, -13] Backstage passes to a TAFKAL80ETC concert should sell in -13 and has quality 0.
+[0, -25] Conjured Mana Cake should sell in -25 and has quality 0.
+
+After Iteration 29[0, -19] +5 Dexterity Vest should sell in -19 and has quality 0.
+[50, -27] Aged Brie should sell in -27 and has quality 50.
+[0, -24] Elixir of the Mongoose should sell in -24 and has quality 0.
+[80, 0] Sulfuras, Hand of Ragnaros should sell in 0 and has quality 80.
+[0, -14] Backstage passes to a TAFKAL80ETC concert should sell in -14 and has quality 0.
+[0, -26] Conjured Mana Cake should sell in -26 and has quality 0.
+
+After Iteration 30[0, -20] +5 Dexterity Vest should sell in -20 and has quality 0.
+[50, -28] Aged Brie should sell in -28 and has quality 50.
+[0, -25] Elixir of the Mongoose should sell in -25 and has quality 0.
+[80, 0] Sulfuras, Hand of Ragnaros should sell in 0 and has quality 80.
+[0, -15] Backstage passes to a TAFKAL80ETC concert should sell in -15 and has quality 0.
+[0, -27] Conjured Mana Cake should sell in -27 and has quality 0.
+
+After Iteration 31[0, -21] +5 Dexterity Vest should sell in -21 and has quality 0.
+[50, -29] Aged Brie should sell in -29 and has quality 50.
+[0, -26] Elixir of the Mongoose should sell in -26 and has quality 0.
+[80, 0] Sulfuras, Hand of Ragnaros should sell in 0 and has quality 80.
+[0, -16] Backstage passes to a TAFKAL80ETC concert should sell in -16 and has quality 0.
+[0, -28] Conjured Mana Cake should sell in -28 and has quality 0.
+
+After Iteration 32[0, -22] +5 Dexterity Vest should sell in -22 and has quality 0.
+[50, -30] Aged Brie should sell in -30 and has quality 50.
+[0, -27] Elixir of the Mongoose should sell in -27 and has quality 0.
+[80, 0] Sulfuras, Hand of Ragnaros should sell in 0 and has quality 80.
+[0, -17] Backstage passes to a TAFKAL80ETC concert should sell in -17 and has quality 0.
+[0, -29] Conjured Mana Cake should sell in -29 and has quality 0.
+
+After Iteration 33[0, -23] +5 Dexterity Vest should sell in -23 and has quality 0.
+[50, -31] Aged Brie should sell in -31 and has quality 50.
+[0, -28] Elixir of the Mongoose should sell in -28 and has quality 0.
+[80, 0] Sulfuras, Hand of Ragnaros should sell in 0 and has quality 80.
+[0, -18] Backstage passes to a TAFKAL80ETC concert should sell in -18 and has quality 0.
+[0, -30] Conjured Mana Cake should sell in -30 and has quality 0.
+
+After Iteration 34[0, -24] +5 Dexterity Vest should sell in -24 and has quality 0.
+[50, -32] Aged Brie should sell in -32 and has quality 50.
+[0, -29] Elixir of the Mongoose should sell in -29 and has quality 0.
+[80, 0] Sulfuras, Hand of Ragnaros should sell in 0 and has quality 80.
+[0, -19] Backstage passes to a TAFKAL80ETC concert should sell in -19 and has quality 0.
+[0, -31] Conjured Mana Cake should sell in -31 and has quality 0.
+
+After Iteration 35[0, -25] +5 Dexterity Vest should sell in -25 and has quality 0.
+[50, -33] Aged Brie should sell in -33 and has quality 50.
+[0, -30] Elixir of the Mongoose should sell in -30 and has quality 0.
+[80, 0] Sulfuras, Hand of Ragnaros should sell in 0 and has quality 80.
+[0, -20] Backstage passes to a TAFKAL80ETC concert should sell in -20 and has quality 0.
+[0, -32] Conjured Mana Cake should sell in -32 and has quality 0.
+
+After Iteration 36[0, -26] +5 Dexterity Vest should sell in -26 and has quality 0.
+[50, -34] Aged Brie should sell in -34 and has quality 50.
+[0, -31] Elixir of the Mongoose should sell in -31 and has quality 0.
+[80, 0] Sulfuras, Hand of Ragnaros should sell in 0 and has quality 80.
+[0, -21] Backstage passes to a TAFKAL80ETC concert should sell in -21 and has quality 0.
+[0, -33] Conjured Mana Cake should sell in -33 and has quality 0.
+
+After Iteration 37[0, -27] +5 Dexterity Vest should sell in -27 and has quality 0.
+[50, -35] Aged Brie should sell in -35 and has quality 50.
+[0, -32] Elixir of the Mongoose should sell in -32 and has quality 0.
+[80, 0] Sulfuras, Hand of Ragnaros should sell in 0 and has quality 80.
+[0, -22] Backstage passes to a TAFKAL80ETC concert should sell in -22 and has quality 0.
+[0, -34] Conjured Mana Cake should sell in -34 and has quality 0.
+
+After Iteration 38[0, -28] +5 Dexterity Vest should sell in -28 and has quality 0.
+[50, -36] Aged Brie should sell in -36 and has quality 50.
+[0, -33] Elixir of the Mongoose should sell in -33 and has quality 0.
+[80, 0] Sulfuras, Hand of Ragnaros should sell in 0 and has quality 80.
+[0, -23] Backstage passes to a TAFKAL80ETC concert should sell in -23 and has quality 0.
+[0, -35] Conjured Mana Cake should sell in -35 and has quality 0.
+
+After Iteration 39[0, -29] +5 Dexterity Vest should sell in -29 and has quality 0.
+[50, -37] Aged Brie should sell in -37 and has quality 50.
+[0, -34] Elixir of the Mongoose should sell in -34 and has quality 0.
+[80, 0] Sulfuras, Hand of Ragnaros should sell in 0 and has quality 80.
+[0, -24] Backstage passes to a TAFKAL80ETC concert should sell in -24 and has quality 0.
+[0, -36] Conjured Mana Cake should sell in -36 and has quality 0.
+
+After Iteration 40[0, -30] +5 Dexterity Vest should sell in -30 and has quality 0.
+[50, -38] Aged Brie should sell in -38 and has quality 50.
+[0, -35] Elixir of the Mongoose should sell in -35 and has quality 0.
+[80, 0] Sulfuras, Hand of Ragnaros should sell in 0 and has quality 80.
+[0, -25] Backstage passes to a TAFKAL80ETC concert should sell in -25 and has quality 0.
+[0, -37] Conjured Mana Cake should sell in -37 and has quality 0.
+
+After Iteration 41[0, -31] +5 Dexterity Vest should sell in -31 and has quality 0.
+[50, -39] Aged Brie should sell in -39 and has quality 50.
+[0, -36] Elixir of the Mongoose should sell in -36 and has quality 0.
+[80, 0] Sulfuras, Hand of Ragnaros should sell in 0 and has quality 80.
+[0, -26] Backstage passes to a TAFKAL80ETC concert should sell in -26 and has quality 0.
+[0, -38] Conjured Mana Cake should sell in -38 and has quality 0.
+
+After Iteration 42[0, -32] +5 Dexterity Vest should sell in -32 and has quality 0.
+[50, -40] Aged Brie should sell in -40 and has quality 50.
+[0, -37] Elixir of the Mongoose should sell in -37 and has quality 0.
+[80, 0] Sulfuras, Hand of Ragnaros should sell in 0 and has quality 80.
+[0, -27] Backstage passes to a TAFKAL80ETC concert should sell in -27 and has quality 0.
+[0, -39] Conjured Mana Cake should sell in -39 and has quality 0.
+
+After Iteration 43[0, -33] +5 Dexterity Vest should sell in -33 and has quality 0.
+[50, -41] Aged Brie should sell in -41 and has quality 50.
+[0, -38] Elixir of the Mongoose should sell in -38 and has quality 0.
+[80, 0] Sulfuras, Hand of Ragnaros should sell in 0 and has quality 80.
+[0, -28] Backstage passes to a TAFKAL80ETC concert should sell in -28 and has quality 0.
+[0, -40] Conjured Mana Cake should sell in -40 and has quality 0.
+
+After Iteration 44[0, -34] +5 Dexterity Vest should sell in -34 and has quality 0.
+[50, -42] Aged Brie should sell in -42 and has quality 50.
+[0, -39] Elixir of the Mongoose should sell in -39 and has quality 0.
+[80, 0] Sulfuras, Hand of Ragnaros should sell in 0 and has quality 80.
+[0, -29] Backstage passes to a TAFKAL80ETC concert should sell in -29 and has quality 0.
+[0, -41] Conjured Mana Cake should sell in -41 and has quality 0.
+
+After Iteration 45[0, -35] +5 Dexterity Vest should sell in -35 and has quality 0.
+[50, -43] Aged Brie should sell in -43 and has quality 50.
+[0, -40] Elixir of the Mongoose should sell in -40 and has quality 0.
+[80, 0] Sulfuras, Hand of Ragnaros should sell in 0 and has quality 80.
+[0, -30] Backstage passes to a TAFKAL80ETC concert should sell in -30 and has quality 0.
+[0, -42] Conjured Mana Cake should sell in -42 and has quality 0.
+
+After Iteration 46[0, -36] +5 Dexterity Vest should sell in -36 and has quality 0.
+[50, -44] Aged Brie should sell in -44 and has quality 50.
+[0, -41] Elixir of the Mongoose should sell in -41 and has quality 0.
+[80, 0] Sulfuras, Hand of Ragnaros should sell in 0 and has quality 80.
+[0, -31] Backstage passes to a TAFKAL80ETC concert should sell in -31 and has quality 0.
+[0, -43] Conjured Mana Cake should sell in -43 and has quality 0.
+
+After Iteration 47[0, -37] +5 Dexterity Vest should sell in -37 and has quality 0.
+[50, -45] Aged Brie should sell in -45 and has quality 50.
+[0, -42] Elixir of the Mongoose should sell in -42 and has quality 0.
+[80, 0] Sulfuras, Hand of Ragnaros should sell in 0 and has quality 80.
+[0, -32] Backstage passes to a TAFKAL80ETC concert should sell in -32 and has quality 0.
+[0, -44] Conjured Mana Cake should sell in -44 and has quality 0.
+
+After Iteration 48[0, -38] +5 Dexterity Vest should sell in -38 and has quality 0.
+[50, -46] Aged Brie should sell in -46 and has quality 50.
+[0, -43] Elixir of the Mongoose should sell in -43 and has quality 0.
+[80, 0] Sulfuras, Hand of Ragnaros should sell in 0 and has quality 80.
+[0, -33] Backstage passes to a TAFKAL80ETC concert should sell in -33 and has quality 0.
+[0, -45] Conjured Mana Cake should sell in -45 and has quality 0.
+
+After Iteration 49[0, -39] +5 Dexterity Vest should sell in -39 and has quality 0.
+[50, -47] Aged Brie should sell in -47 and has quality 50.
+[0, -44] Elixir of the Mongoose should sell in -44 and has quality 0.
+[80, 0] Sulfuras, Hand of Ragnaros should sell in 0 and has quality 80.
+[0, -34] Backstage passes to a TAFKAL80ETC concert should sell in -34 and has quality 0.
+[0, -46] Conjured Mana Cake should sell in -46 and has quality 0.
+
+After Iteration 50[0, -40] +5 Dexterity Vest should sell in -40 and has quality 0.
+[50, -48] Aged Brie should sell in -48 and has quality 50.
+[0, -45] Elixir of the Mongoose should sell in -45 and has quality 0.
+[80, 0] Sulfuras, Hand of Ragnaros should sell in 0 and has quality 80.
+[0, -35] Backstage passes to a TAFKAL80ETC concert should sell in -35 and has quality 0.
+[0, -47] Conjured Mana Cake should sell in -47 and has quality 0.
+
