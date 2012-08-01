@@ -1,0 +1,22 @@
+Extract foreach loop body
+Move that to a new class. Put class in right namespace.
+Use invert conditional on all but the legendaries.
+Extract the obvious incr quality and decr quality.
+Extract SetToZero
+Extract named IsFoo methods, including IsExpired
+Extract AgeOneDay
+Move ageone, isFoo, setzero, incr, and decr to new class.
+Iterate them and convert to extension methods (CtrlShift+r, o)
+Move AgeOneDay to top & update the bounds in tickets
+Flatten all the ifs into a single elif chain
+Combine ifs
+Go to Incr/Decr. Put next to each other.
+Extract IsLegendary check to be a guard clause (combine ifs, swap order of &&, split ifs, invert conditional)
+Copy guard clause to the other one.
+Type in one of them the Math.Max solution. Delete the guarded incr part.
+Copy that over the other and modify (consts & max to min).
+Copy the max & min to each other.
+Extract one body (use incr, not decr).
+Introduce parameter for adjustment
+Copy the call over other body & update param value.
+Inline both of them.
