@@ -9,7 +9,7 @@ namespace ConsoleApp.Tests
 	[TestFixture]
 	public class ItemAgingRules
 	{
-		[Test, UseReporter(typeof(DiffReporter))]
+		[Test, UseReporter(typeof(QuietReporter))]
 		public void ShouldAlwaysPass()
 		{
 			var testSubject = new GildedRose();
