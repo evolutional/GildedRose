@@ -1,3 +1,4 @@
+Convert for to foreach
 Extract foreach loop body
 Move that to a new class. Put class in right namespace.
 Use invert conditional on all but the legendaries.
