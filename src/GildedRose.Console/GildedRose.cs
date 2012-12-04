@@ -12,19 +12,19 @@
 
  * Pretty simple, right? Well this is where it gets interesting:
 
-	- Once the sell by date has passed, Quality degrades twice as fast
+	- Once the sell by date has passed, Quality changes twice as fast
 	- The Quality of an item is never negative
 	- "Aged Brie" actually increases in Quality the older it gets
 	- The Quality of an item is never more than 50
-	- "Sulfuras", being a legendary item, never has to be sold or decreases in Quality
+	- "Sulfuras", being a legendary item, never has to be sold or changes in Quality
 	- "Backstage passes", like aged brie, increases in Quality as it's SellIn value approaches; Quality
 		increases by 2 when there are 10 days or less and by 3 when there are 5 days or less but Quality
 		drops to 0 after the concert
 
  * We have recently signed a supplier of conjured items. This requires an update to our system:
 
-	- "Conjured" items degrade in Quality twice as fast as normal items. Conjured is an adjective; it can
-		be applie to any item to make it conjured.
+	- "Conjured" items change in Quality twice as fast as normal items. Conjured is an adjective; it can
+		be applied to any item to make it conjured. This modifies the normal rule for that item.
 
  * Feel free to make any changes to the UpdateQuality method and add any new code as long as everything
  * still works correctly. However, do not alter the Item class or Items property as those belong to the

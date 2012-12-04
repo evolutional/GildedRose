@@ -6,10 +6,10 @@ using NUnit.Framework;
 namespace ConsoleApp.Tests
 {
 	[TestFixture]
-	public class ItemAgingRules
+	public class BuildVerificationTests
 	{
 		[Test, UseReporter(typeof (DiffReporter))]
-		public void PinDownTheZombie()
+		public void AgeOurStandardInventoryForSeveralMonthsAndVerifyEachDaysResults()
 		{
 			var testSubject = new GildedRose();
 			var log = new StringBuilder();
