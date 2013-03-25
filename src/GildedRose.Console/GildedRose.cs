@@ -24,14 +24,15 @@
  * We have recently signed a supplier of conjured items. This requires an update to our system:
 
 	- "Conjured" items change in Quality twice as fast as normal items. Conjured is an adjective; it can
-		be applied to any item to make it conjured. This modifies the normal rule for that item.
+		be applied to any item to make it conjured (for example, "Conjured Mana Cakes"). This modifies
+		the normal rule for that item.
 
  * Feel free to make any changes to the UpdateQuality method and add any new code as long as everything
  * still works correctly. However, do not alter the Item class or Items property as those belong to the
  * goblin in the corner who will insta-rage and one-shot you as he doesn't believe in shared code ownership
  * (we have kindly placed this code into HereBeDragons.cs, so that you won't accidentally change it. This
  * also makes it easier for the goblin to tell when to insta-rage). Your work needs to be completed by
- * Friday, February 18, 2011 08:00:00 AM PST.
+ * 30 minutes ago, but we will accept 30 minutes from now.
 
  * Just for clarification, an item can never have its Quality increase above 50, however "Sulfuras" is a
  * legendary item and as such its Quality is 80 and it never alters.
