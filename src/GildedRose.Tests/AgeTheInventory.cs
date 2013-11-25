@@ -1,11 +1,13 @@
-﻿using NUnit.Framework;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
+
 
 namespace ConsoleApp.Tests
 {
-    [TestFixture]
+    [TestClass]
     public class AgeTheInventory
     {
-        [Test]
+        [TestMethod]
         public void YouShouldProbablyPutTestsHere()
         {
         }
