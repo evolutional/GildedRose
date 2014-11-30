@@ -1,7 +1,22 @@
+using System.Net.NetworkInformation;
+
 namespace ConsoleApp
 {
     public static class ItemExtensions
     {
+        private static void IncreaseQuality(this GildedRose.Item item)
+        {
+            if (item.Quality < 50)
+            {
+                item.Quality = item.Quality + 1;
+            }
+        }
+
+        private static bool IsAgedBrie(this GildedRose.Item item)
+        {
+            return item.Name == "Aged Brie";
+        }
+
         public static void Update(this GildedRose.Item item)
         {
             if (item.Name == "Sulfuras, Hand of Ragnaros")
@@ -9,7 +24,7 @@ namespace ConsoleApp
                 return;
             }
 
-            if (item.Name != "Aged Brie" && item.Name != "Backstage passes to a TAFKAL80ETC concert")
+            if (!item.IsAgedBrie() && item.Name != "Backstage passes to a TAFKAL80ETC concert")
             {
                 if (item.Quality > 0)
                 {
@@ -20,24 +35,18 @@ namespace ConsoleApp
             {
                 if (item.Quality < 50)
                 {
-                    item.Quality = item.Quality + 1;
+                    item.IncreaseQuality();
 
                     if (item.Name == "Backstage passes to a TAFKAL80ETC concert")
                     {
                         if (item.SellIn < 11)
                         {
-                            if (item.Quality < 50)
-                            {
-                                item.Quality = item.Quality + 1;
-                            }
+                            item.IncreaseQuality();
                         }
 
                         if (item.SellIn < 6)
                         {
-                            if (item.Quality < 50)
-                            {
-                                item.Quality = item.Quality + 1;
-                            }
+                            item.IncreaseQuality();
                         }
                     }
                 }
@@ -47,7 +56,7 @@ namespace ConsoleApp
 
             if (item.SellIn < 0)
             {
-                if (item.Name != "Aged Brie")
+                if (!item.IsAgedBrie())
                 {
                     if (item.Name != "Backstage passes to a TAFKAL80ETC concert")
                     {
@@ -63,10 +72,7 @@ namespace ConsoleApp
                 }
                 else
                 {
-                    if (item.Quality < 50)
-                    {
-                        item.Quality = item.Quality + 1;
-                    }
+                    item.IncreaseQuality();
                 }
             }
         }
