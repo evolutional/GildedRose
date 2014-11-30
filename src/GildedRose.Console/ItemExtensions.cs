@@ -4,11 +4,12 @@ namespace ConsoleApp
 {
     public static class ItemExtensions
     {
-        private static void IncreaseQuality(this GildedRose.Item item)
+        private static void IncreaseQuality(this GildedRose.Item item, int modifier)
         {
-            if (item.Quality < 50)
+            item.Quality = item.Quality + modifier;
+            if (item.Quality > 50)
             {
-                item.Quality = item.Quality + 1;
+                item.Quality = 50;
             }
         }
 
@@ -37,27 +38,27 @@ namespace ConsoleApp
                 return;
             }
 
-            if (!item.IsAgedBrie() && !item.IsBackstagePass())
+            if (item.IsAgedBrie() || item.IsBackstagePass())
             {
-                item.DecreaseQuality();
-            }
-            else
-            {
-                item.IncreaseQuality();
+                var modifier = 1;
 
                 if (item.IsBackstagePass())
                 {
-                    if (item.SellIn < 11)
-                    {
-                        item.IncreaseQuality();
-                    }
-
                     if (item.SellIn < 6)
                     {
-                        item.IncreaseQuality();
+                        modifier = 3;
+                    }
+                    else if (item.SellIn < 11)
+                    {
+                        modifier = 2;
                     }
                 }
-              
+
+                item.IncreaseQuality(modifier);
+            }
+            else
+            {
+                item.DecreaseQuality();
             }
 
             item.SellIn = item.SellIn - 1;
@@ -67,20 +68,20 @@ namespace ConsoleApp
                 return;
             }
 
-            if (!item.IsAgedBrie())
+            if (item.IsAgedBrie())
             {
-                if (!item.IsBackstagePass())
-                {
-                    item.DecreaseQuality();
-                }
-                else
-                {
-                    item.Quality = 0;
-                }
+                item.IncreaseQuality(1);
             }
             else
             {
-                item.IncreaseQuality();
+                if (item.IsBackstagePass())
+                {
+                    item.Quality = 0;
+                }
+                else
+                {
+                    item.DecreaseQuality();
+                }
             }
            
         }
