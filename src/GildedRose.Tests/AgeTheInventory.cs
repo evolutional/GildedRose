@@ -6,6 +6,10 @@ namespace ConsoleApp.Tests
     [TestFixture]
     public class AgeTheInventory
     {
+        private ItemBuilder TestItem()
+        {
+            return new ItemBuilder().WithName("Non special test item");
+        }
         private ItemBuilder BackstagePasses()
         {
             return new ItemBuilder().WithName("Backstage passes to a TAFKAL80ETC concert");
@@ -90,6 +94,30 @@ namespace ConsoleApp.Tests
         public void BackstagePasses_when_SellIn_expired_Update_Then_quality_is_zero()
         {
             var item = BackstagePasses().WithQuality(20).WithSellIn(0).Build();
+            item.Update();
+            item.Quality.Should().Be(0);
+        }
+
+        [Test]
+        public void NormalItems_Update_Then_quality_decreases()
+        {
+            var item = TestItem().WithQuality(20).WithSellIn(5).Build();
+            item.Update();
+            item.Quality.Should().Be(19);
+        }
+
+        [Test]
+        public void NormalItems_when_sellIn_expired_Update_Then_quality_decreases_twice_as_fast()
+        {
+            var item = TestItem().WithQuality(20).WithSellIn(0).Build();
+            item.Update();
+            item.Quality.Should().Be(18);
+        }
+
+        [Test]
+        public void NormalItems_when_sellIn_expired_Update_Then_quality_never_negativet()
+        {
+            var item = TestItem().WithQuality(1).WithSellIn(0).Build();
             item.Update();
             item.Quality.Should().Be(0);
         }

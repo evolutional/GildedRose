@@ -12,6 +12,14 @@ namespace ConsoleApp
             }
         }
 
+        private static void DecreaseQuality(this GildedRose.Item item)
+        {
+            if (item.Quality > 0)
+            {
+                item.Quality = item.Quality - 1;
+            }
+        }
+
         private static bool IsAgedBrie(this GildedRose.Item item)
         {
             return item.Name == "Aged Brie";
@@ -31,10 +39,7 @@ namespace ConsoleApp
 
             if (!item.IsAgedBrie() && !item.IsBackstagePass())
             {
-                if (item.Quality > 0)
-                {
-                    item.Quality = item.Quality - 1;
-                }
+                item.DecreaseQuality();
             }
             else
             {
@@ -57,27 +62,27 @@ namespace ConsoleApp
 
             item.SellIn = item.SellIn - 1;
 
-            if (item.SellIn < 0)
+            if (item.SellIn >= 0)
             {
-                if (!item.IsAgedBrie())
+                return;
+            }
+
+            if (!item.IsAgedBrie())
+            {
+                if (!item.IsBackstagePass())
                 {
-                    if (!item.IsBackstagePass())
-                    {
-                        if (item.Quality > 0)
-                        {
-                             item.Quality = item.Quality - 1;
-                        }
-                    }
-                    else
-                    {
-                        item.Quality = 0;
-                    }
+                    item.DecreaseQuality();
                 }
                 else
                 {
-                    item.IncreaseQuality();
+                    item.Quality = 0;
                 }
             }
+            else
+            {
+                item.IncreaseQuality();
+            }
+           
         }
     }
 }
