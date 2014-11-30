@@ -2,6 +2,7 @@
 {
     public class ItemBuilder
     {
+        private bool _conjured;
         private string _name;
         private int _sellIn;
         private int _quality;
@@ -26,7 +27,14 @@
 
         public GildedRose.Item Build()
         {
-            return new GildedRose.Item() { Name = _name, SellIn = _sellIn, Quality = _quality};
+            var modifiedName = _conjured ? "Conjured " + _name : _name;
+            return new GildedRose.Item() { Name = modifiedName, SellIn = _sellIn, Quality = _quality};
+        }
+
+        public ItemBuilder WhenConjured()
+        {
+            _conjured = true;
+            return this;
         }
     }
 }

@@ -6,25 +6,53 @@ namespace ConsoleApp
     {
         private static void ChangeQuality(this GildedRose.Item item, int modifier)
         {
+            if (item.IsConjured())
+            {
+                modifier *= 2;
+            }
+
             item.Quality = item.Quality + modifier;
+
             if (item.Quality > 50)
             {
                 item.Quality = 50;
             }
+
             if (item.Quality < 0)
             {
                 item.Quality = 0;
             }
         }
 
+
+        private static bool IsConjured(this GildedRose.Item item)
+        {
+            return item.Name.StartsWith("Conjured ");
+        }
+
+        private static string BaseName(this GildedRose.Item item)
+        {
+            var name = item.Name;
+            if (item.IsConjured())
+            {
+                name = name.Remove(0, 9);
+            }
+            return name;
+        }
+
         private static bool IsAgedBrie(this GildedRose.Item item)
         {
-            return item.Name == "Aged Brie";
+            return item.BaseName() == "Aged Brie";
         }
 
         private static bool IsBackstagePass(this GildedRose.Item item)
         {
-            return item.Name == "Backstage passes to a TAFKAL80ETC concert";
+            return item.BaseName() == "Backstage passes to a TAFKAL80ETC concert";
+        }
+
+        private static bool IsSulfuras(this GildedRose.Item item)
+        {
+            return item.BaseName() == "Sulfuras, Hand of Ragnaros";
         }
 
         private static void UpdateExpiredItem(this GildedRose.Item item)
@@ -47,7 +75,7 @@ namespace ConsoleApp
 
         public static void Update(this GildedRose.Item item)
         {
-            if (item.Name == "Sulfuras, Hand of Ragnaros")
+            if (item.IsSulfuras())
             {
                 return;
             }
