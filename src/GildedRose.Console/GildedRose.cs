@@ -43,91 +43,23 @@ using System.Text;
 
 namespace ConsoleApp
 {
-	public partial class GildedRose
-	{
-		public void UpdateQuality()
-		{
-			for(int i = 0; i < this._innventory.Count; i++)
-			{
-				if(this._innventory[i].Name != "Aged Brie" && this._innventory[i].Name != "Backstage passes to a TAFKAL80ETC concert")
-				{
-					if(this._innventory[i].Quality > 0)
-					{
-						if(this._innventory[i].Name != "Sulfuras, Hand of Ragnaros")
-						{
-							this._innventory[i].Quality = this._innventory[i].Quality - 1;
-						}
-					}
-				}
-				else
-				{
-					if(this._innventory[i].Quality < 50)
-					{
-						this._innventory[i].Quality = this._innventory[i].Quality + 1;
+    public partial class GildedRose
+    {
+        public void UpdateQuality()
+        {
+            for (int i = 0; i < this._innventory.Count; i++)
+            {
+                this._innventory[i].Update();
+            }
+        }
 
-						if(this._innventory[i].Name == "Backstage passes to a TAFKAL80ETC concert")
-						{
-							if(this._innventory[i].SellIn < 11)
-							{
-								if(this._innventory[i].Quality < 50)
-								{
-									this._innventory[i].Quality = this._innventory[i].Quality + 1;
-								}
-							}
-
-							if(this._innventory[i].SellIn < 6)
-							{
-								if(this._innventory[i].Quality < 50)
-								{
-									this._innventory[i].Quality = this._innventory[i].Quality + 1;
-								}
-							}
-						}
-					}
-				}
-
-				if(this._innventory[i].Name != "Sulfuras, Hand of Ragnaros")
-				{
-					this._innventory[i].SellIn = this._innventory[i].SellIn - 1;
-				}
-
-				if(this._innventory[i].SellIn < 0)
-				{
-					if(this._innventory[i].Name != "Aged Brie")
-					{
-						if(this._innventory[i].Name != "Backstage passes to a TAFKAL80ETC concert")
-						{
-							if(this._innventory[i].Quality > 0)
-							{
-								if(this._innventory[i].Name != "Sulfuras, Hand of Ragnaros")
-								{
-									this._innventory[i].Quality = this._innventory[i].Quality - 1;
-								}
-							}
-						}
-						else
-						{
-							this._innventory[i].Quality = this._innventory[i].Quality - this._innventory[i].Quality;
-						}
-					}
-					else
-					{
-						if(this._innventory[i].Quality < 50)
-						{
-							this._innventory[i].Quality = this._innventory[i].Quality + 1;
-						}
-					}
-				}
-			}
-		}
-
-		public void DumpDebugInfo(StringBuilder log)
-		{
-			foreach(var item in _innventory)
-			{
-				log.AppendFormat("[{1}, {2}] {0} should sell in {2} and has quality {1}.", item.Name, item.Quality, item.SellIn);
-				log.AppendLine();
-			}
-		}
-	}
+        public void DumpDebugInfo(StringBuilder log)
+        {
+            foreach (var item in _innventory)
+            {
+                log.AppendFormat("[{1}, {2}] {0} should sell in {2} and has quality {1}.", item.Name, item.Quality, item.SellIn);
+                log.AppendLine();
+            }
+        }
+    }
 }

@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="HereBeDragons.cs" />
     <Compile Include="GildedRose.cs" />
+    <Compile Include="ItemExtensions.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
