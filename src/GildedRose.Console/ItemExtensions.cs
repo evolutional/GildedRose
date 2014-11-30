@@ -17,6 +17,11 @@ namespace ConsoleApp
             return item.Name == "Aged Brie";
         }
 
+        private static bool IsBackstagePass(this GildedRose.Item item)
+        {
+            return item.Name == "Backstage passes to a TAFKAL80ETC concert";
+        }
+
         public static void Update(this GildedRose.Item item)
         {
             if (item.Name == "Sulfuras, Hand of Ragnaros")
@@ -24,7 +29,7 @@ namespace ConsoleApp
                 return;
             }
 
-            if (!item.IsAgedBrie() && item.Name != "Backstage passes to a TAFKAL80ETC concert")
+            if (!item.IsAgedBrie() && !item.IsBackstagePass())
             {
                 if (item.Quality > 0)
                 {
@@ -33,23 +38,21 @@ namespace ConsoleApp
             }
             else
             {
-                if (item.Quality < 50)
+                item.IncreaseQuality();
+
+                if (item.IsBackstagePass())
                 {
-                    item.IncreaseQuality();
-
-                    if (item.Name == "Backstage passes to a TAFKAL80ETC concert")
+                    if (item.SellIn < 11)
                     {
-                        if (item.SellIn < 11)
-                        {
-                            item.IncreaseQuality();
-                        }
+                        item.IncreaseQuality();
+                    }
 
-                        if (item.SellIn < 6)
-                        {
-                            item.IncreaseQuality();
-                        }
+                    if (item.SellIn < 6)
+                    {
+                        item.IncreaseQuality();
                     }
                 }
+              
             }
 
             item.SellIn = item.SellIn - 1;
@@ -58,7 +61,7 @@ namespace ConsoleApp
             {
                 if (!item.IsAgedBrie())
                 {
-                    if (item.Name != "Backstage passes to a TAFKAL80ETC concert")
+                    if (!item.IsBackstagePass())
                     {
                         if (item.Quality > 0)
                         {
@@ -67,7 +70,7 @@ namespace ConsoleApp
                     }
                     else
                     {
-                        item.Quality = item.Quality - item.Quality;
+                        item.Quality = 0;
                     }
                 }
                 else

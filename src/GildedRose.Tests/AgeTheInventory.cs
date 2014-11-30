@@ -6,6 +6,11 @@ namespace ConsoleApp.Tests
     [TestFixture]
     public class AgeTheInventory
     {
+        private ItemBuilder BackstagePasses()
+        {
+            return new ItemBuilder().WithName("Backstage passes to a TAFKAL80ETC concert");
+        }
+
         private ItemBuilder AgedBrie()
         {
             return new ItemBuilder().WithName("Aged Brie");
@@ -56,5 +61,37 @@ namespace ConsoleApp.Tests
             item.Quality.Should().Be(50);
         }
 
+
+        [Test]
+        public void BackstagePasses_when_SellIn_Over_10_days_Update_increases_in_quality()
+        {
+            var item = BackstagePasses().WithQuality(1).WithSellIn(15).Build();
+            item.Update();
+            item.Quality.Should().Be(2);
+        }
+
+        [Test]
+        public void BackstagePasses_when_SellIn_Over_5_days_Update_increases_in_quality_twice_as_fast()
+        {
+            var item = BackstagePasses().WithQuality(1).WithSellIn(6).Build();
+            item.Update();
+            item.Quality.Should().Be(3);
+        }
+
+        [Test]
+        public void BackstagePasses_when_SellIn_Under_5_days_Update_increases_in_quality_three_times_as_fast()
+        {
+            var item = BackstagePasses().WithQuality(1).WithSellIn(3).Build();
+            item.Update();
+            item.Quality.Should().Be(4);
+        }
+
+        [Test]
+        public void BackstagePasses_when_SellIn_expired_Update_Then_quality_is_zero()
+        {
+            var item = BackstagePasses().WithQuality(20).WithSellIn(0).Build();
+            item.Update();
+            item.Quality.Should().Be(0);
+        }
     }
 }
